@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>execute aws translate flow in your instance to translate the above text. once the flow is successfully executed then i will give you the next clue.......</key>
+        <language>en</language>
+        <message>Execute AWS Translate flow in your instance to translate the above text. Once the flow is successfully executed then I will give you the next clue.......</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>manish.kothari@snc</sys_created_by>
+        <sys_created_on>2023-02-08 18:37:14</sys_created_on>
+        <sys_id>ea6c1b871b746950988dc8851a4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>execute aws translate flow in your instance to translate the above text. once the flow is successfully executed then i will give you the next clue.......</sys_name>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name>sys_ui_message_ea6c1b871b746950988dc8851a4bcb64</sys_update_name>
+        <sys_updated_by>manish.kothari@snc</sys_updated_by>
+        <sys_updated_on>2023-02-08 18:37:14</sys_updated_on>
+    </sys_ui_message>
+</record_update>

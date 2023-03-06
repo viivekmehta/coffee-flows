@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>Coffee + Drama</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.41",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "617a2f24fd2e4f4cbfc40d492f8da8da": {
+          "id": "617a2f24fd2e4f4cbfc40d492f8da8da",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "7c4814216d3c4b848527bbcb85f3e85d": {
+          "id": "7c4814216d3c4b848527bbcb85f3e85d",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "44c279fb25a44cb2b872c83a70a54df4": {
+          "id": "44c279fb25a44cb2b872c83a70a54df4",
+          "stepType": "Prompt",
+          "name": "Player Name",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Enter your player name"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "b2be2225ebc148aaa47677ac64d52544",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "90cbbc021f744d4b83038c1af4965a05": {
+          "id": "90cbbc021f744d4b83038c1af4965a05",
+          "stepType": "Decision",
+          "name": "If Player Exists"
+        },
+        "c7220a995fe042cc897d8b3b51a5c4a7": {
+          "id": "c7220a995fe042cc897d8b3b51a5c4a7",
+          "stepType": "LookupRecord",
+          "name": "Check Player Name",
+          "condition": {
+            "mode": "glide_query",
+            "value": "player_name={{vaInputs.player_name}}"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "83021d4f4b984106851e1b37cd621098"
+        },
+        "1e6fb858c9c44850b532f0c878343dd8": {
+          "id": "1e6fb858c9c44850b532f0c878343dd8",
+          "stepType": "VideoOutput",
+          "name": "Intro",
+          "cardTemplate": "Youtube Video Card",
+          "navigationLabel": "Let's begin",
+          "cardFields": {
+            "0079e38473422010f14a063f34f6a7bc_title": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Introduction"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple"
+            },
+            "0079e38473422010f14a063f34f6a7bc_id": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "2KO-_H7zY3k"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple"
+            }
+          },
+          "cardDefinition": {
+            "sys_id": "0079e38473422010f14a063f34f6a7bc",
+            "name": "Youtube Video Card",
+            "sys_name": "Youtube Video Card",
+            "thumbnail.name": "Video with text.svg",
+            "fields": [
+              {
+                "label": "Title",
+                "position": "1",
+                "mandatory": true,
+                "name": "title",
+                "id": "0079e38473422010f14a063f34f6a7bc_title"
+              },
+              {
+                "label": "Title Link",
+                "position": "1B",
+                "mandatory": false,
+                "name": "link",
+                "id": "0079e38473422010f14a063f34f6a7bc_link"
+              },
+              {
+                "label": "Description",
+                "position": "2",
+                "mandatory": false,
+                "name": "description",
+                "id": "0079e38473422010f14a063f34f6a7bc_description"
+              },
+              {
+                "label": "Youtube Video ID",
+                "position": "3",
+                "mandatory": true,
+                "name": "id",
+                "id": "0079e38473422010f14a063f34f6a7bc_id"
+              }
+            ],
+            "value": "Youtube Video Card",
+            "hasTemplateError": false
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        },
+        "b1d44e9d81214d49ab976587e2a01378": {
+          "id": "b1d44e9d81214d49ab976587e2a01378",
+          "stepType": "CrudAction",
+          "name": "Create Player",
+          "template": "player_name={{vaInputs.player_name}}",
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "1c80d97add654706bbdd6bbce5e98504"
+        },
+        "7bd811483dcd4e208b6985880dbfaffc": {
+          "id": "7bd811483dcd4e208b6985880dbfaffc",
+          "stepType": "TextOutput",
+          "name": "Player name already exists",
+          "secure": false,
+          "value": [
+            {
+              "value": "(function execute() {\n    /* Return a quoted string.  For example:\n\n       if (vaInputs.first_name == 'Bill') {\n           return gs.getMessageLang(\"hi there {0}\", vaContext.getRequesterLang(), [vaInputs.first_name]);\n       } else {\n           return gs.getMessageLang(\"how are you {0}\", vaContext.getRequesterLang(), [vaInputs.last_name]);\n       }\n    */\n    vaInputs.check_player_name = \"\";\n    return gs.getMessageLang(\"**{0}** is already taken\", vaContext.getRequesterLang(), [vaInputs.player_name]);\n})()\n",
+              "mode": "script"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "8b9d5dca69d844519f40845cda484128": {
+          "stepType": "ChoicePrompt",
+          "name": "Number Selection",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Select a number from 1-5"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "That's a good choice! Here comes your clue..."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "59b2c20c2d024ba5b1cdeda115912615",
+          "id": "8b9d5dca69d844519f40845cda484128",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "5085d060b9684952a58b2f5d2074b741": {
+          "id": "5085d060b9684952a58b2f5d2074b741",
+          "stepType": "TextOutput",
+          "name": "Huddle 1",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Execute AWS Translate flow in your instance to translate the above text. Once the flow is successfully executed then I will give you the next clue......."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "8676ba5bd0a141a9b6e0b473c65d4aec"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "d5f9cb6cda6b4611be113466d9e7ec7f": {
+          "id": "d5f9cb6cda6b4611be113466d9e7ec7f",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "08e9ef67a6bc4f86ab05cef492b1b00f": {
+          "id": "08e9ef67a6bc4f86ab05cef492b1b00f",
+          "stepType": "TextOutput",
+          "name": "Spanish",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Spanish Message",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "f0dcc11598f24feb9d820ddb80027344"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "7329ba02570f42b3b87e11719809fc55": {
+          "id": "7329ba02570f42b3b87e11719809fc55",
+          "stepType": "TextOutput",
+          "name": "Japanese",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Japanese Message",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "c86807a8ccd34bc1900752979523b3d4"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "92e9d71f8acb4b1f9b31648f34688c86": {
+          "id": "92e9d71f8acb4b1f9b31648f34688c86",
+          "stepType": "TextOutput",
+          "name": "Dutch",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Dutch Message",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "7ee3e62760bb42b5bf646db534f3b982"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "6f6462984ea643318a88d3128291a409": {
+          "id": "6f6462984ea643318a88d3128291a409",
+          "stepType": "TextOutput",
+          "name": "French",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "French Message",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "9e2130d04337424685a23b53adea13c2"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "559ff97595b2457a8bf9640e48f0d92d": {
+          "id": "559ff97595b2457a8bf9640e48f0d92d",
+          "stepType": "TextOutput",
+          "name": "German",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "German Message",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "2790ddec788143a4888b8a51406e298c"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "558a2eb298564ce69493bb30b119ab2c": {
+          "id": "558a2eb298564ce69493bb30b119ab2c",
+          "stepType": "VideoOutput",
+          "name": "Level 1 Complete",
+          "cardTemplate": "Youtube Video Card",
+          "navigationLabel": "",
+          "cardFields": {
+            "0079e38473422010f14a063f34f6a7bc_title": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Level 1 Completed"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple"
+            },
+            "0079e38473422010f14a063f34f6a7bc_id": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "0NP5dFgw2Lk"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple"
+            }
+          },
+          "cardDefinition": {
+            "sys_id": "0079e38473422010f14a063f34f6a7bc",
+            "name": "Youtube Video Card",
+            "sys_name": "Youtube Video Card",
+            "thumbnail.name": "Video with text.svg",
+            "fields": [
+              {
+                "label": "Title",
+                "position": "1",
+                "mandatory": true,
+                "name": "title",
+                "id": "0079e38473422010f14a063f34f6a7bc_title"
+              },
+              {
+                "label": "Title Link",
+                "position": "1B",
+                "mandatory": false,
+                "name": "link",
+                "id": "0079e38473422010f14a063f34f6a7bc_link"
+              },
+              {
+                "label": "Description",
+                "position": "2",
+                "mandatory": false,
+                "name": "description",
+                "id": "0079e38473422010f14a063f34f6a7bc_description"
+              },
+              {
+                "label": "Youtube Video ID",
+                "position": "3",
+                "mandatory": true,
+                "name": "id",
+                "id": "0079e38473422010f14a063f34f6a7bc_id"
+              }
+            ],
+            "value": "Youtube Video Card",
+            "hasTemplateError": false
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        },
+        "273e0e6f32b444de99a426a91708193b": {
+          "id": "273e0e6f32b444de99a426a91708193b",
+          "stepType": "CrudAction",
+          "name": "Set Start Time",
+          "template": "start_time={{vaVars.datetime}}",
+          "mode": "update",
+          "record": "1c80d97add654706bbdd6bbce5e98504",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "dd226bf8c3114e8880712cf01b930743"
+        },
+        "d0714572757146ada7b0f00989aaba69": {
+          "id": "d0714572757146ada7b0f00989aaba69",
+          "stepType": "CrudAction",
+          "name": "Set End Time and Score",
+          "template": "end_time={{vaVars.datetime}}^score={{vaVars.generateScore}}",
+          "mode": "update",
+          "record": "1c80d97add654706bbdd6bbce5e98504",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "ec30953e5c14407cabdfa34e01ede9d7"
+        }
+      },
+      "edges": [
+        {
+          "id": "099005c51a6b49c2a51bdf7106c1fc89",
+          "edgeType": "Edge",
+          "source": "617a2f24fd2e4f4cbfc40d492f8da8da",
+          "target": "44c279fb25a44cb2b872c83a70a54df4",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "16e7cba816c549f8a286863e69317126",
+          "edgeType": "Edge",
+          "source": "44c279fb25a44cb2b872c83a70a54df4",
+          "target": "c7220a995fe042cc897d8b3b51a5c4a7",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "08ebe41986c64a5e9ebdfa256a417abb",
+          "edgeType": "Edge",
+          "source": "7bd811483dcd4e208b6985880dbfaffc",
+          "target": "44c279fb25a44cb2b872c83a70a54df4",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d86c5456164143ccbfd92d6c57379d4f",
+          "edgeType": "Edge",
+          "source": "c7220a995fe042cc897d8b3b51a5c4a7",
+          "target": "90cbbc021f744d4b83038c1af4965a05",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9fb943102b934c548594c1584a53f57d",
+          "edgeType": "Branch",
+          "source": "90cbbc021f744d4b83038c1af4965a05",
+          "target": "b1d44e9d81214d49ab976587e2a01378",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.check_player_nameISEMPTY",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "010d27752eb04c66ac349cc820a14afa",
+          "edgeType": "Edge",
+          "source": "b1d44e9d81214d49ab976587e2a01378",
+          "target": "1e6fb858c9c44850b532f0c878343dd8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "271a51d10a344f7d879168fab0f6d815",
+          "edgeType": "Branch",
+          "source": "90cbbc021f744d4b83038c1af4965a05",
+          "target": "7bd811483dcd4e208b6985880dbfaffc",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.check_player_nameISNOTEMPTY",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "dca028313f4349b48bbd22e174c848b3",
+          "edgeType": "Edge",
+          "source": "1e6fb858c9c44850b532f0c878343dd8",
+          "target": "8b9d5dca69d844519f40845cda484128",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "53b4e11762094c059b63499d45bda6dd",
+          "edgeType": "Branch",
+          "source": "d5f9cb6cda6b4611be113466d9e7ec7f",
+          "target": "08e9ef67a6bc4f86ab05cef492b1b00f",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.number_selection=Spanish",
+            "mode": "query"
+          },
+          "label": "4"
+        },
+        {
+          "id": "767600ead03741cfabdd567c20834318",
+          "edgeType": "Edge",
+          "source": "08e9ef67a6bc4f86ab05cef492b1b00f",
+          "target": "5085d060b9684952a58b2f5d2074b741",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f202b5cde71346abb96b62ef74d7d52e",
+          "edgeType": "Branch",
+          "source": "d5f9cb6cda6b4611be113466d9e7ec7f",
+          "target": "7329ba02570f42b3b87e11719809fc55",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.number_selection=Japanese",
+            "mode": "query"
+          },
+          "label": "5"
+        },
+        {
+          "id": "75c9306892c240a1930588c2ad5edb79",
+          "edgeType": "Edge",
+          "source": "7329ba02570f42b3b87e11719809fc55",
+          "target": "5085d060b9684952a58b2f5d2074b741",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "28eabb9b48df4d869ca2c4efa5176f1f",
+          "edgeType": "Branch",
+          "source": "d5f9cb6cda6b4611be113466d9e7ec7f",
+          "target": "92e9d71f8acb4b1f9b31648f34688c86",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.number_selection=Dutch",
+            "mode": "query"
+          },
+          "label": "3"
+        },
+        {
+          "id": "59e1aaec522f4df6977c04c98efccc5c",
+          "edgeType": "Edge",
+          "source": "92e9d71f8acb4b1f9b31648f34688c86",
+          "target": "5085d060b9684952a58b2f5d2074b741",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c3eb546a44e64bd5a2b301c8bb30a86d",
+          "edgeType": "Branch",
+          "source": "d5f9cb6cda6b4611be113466d9e7ec7f",
+          "target": "6f6462984ea643318a88d3128291a409",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.number_selection=French",
+            "mode": "query"
+          },
+          "label": "2"
+        },
+        {
+          "id": "0144d3447a0f49389bb7e1f4460647f2",
+          "edgeType": "Edge",
+          "source": "6f6462984ea643318a88d3128291a409",
+          "target": "5085d060b9684952a58b2f5d2074b741",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "012ab42bc0c246449aadc3db806c6387",
+          "edgeType": "Branch",
+          "source": "d5f9cb6cda6b4611be113466d9e7ec7f",
+          "target": "559ff97595b2457a8bf9640e48f0d92d",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.number_selection=German",
+            "mode": "query"
+          },
+          "label": "1"
+        },
+        {
+          "id": "a0464f85043f412a833e035efc3b0077",
+          "edgeType": "Edge",
+          "source": "559ff97595b2457a8bf9640e48f0d92d",
+          "target": "5085d060b9684952a58b2f5d2074b741",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "74d601bf6ebd429bb5050fd9b2ebe21b",
+          "edgeType": "Edge",
+          "source": "5085d060b9684952a58b2f5d2074b741",
+          "target": "558a2eb298564ce69493bb30b119ab2c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "7dae888db38c4afb85709b20db775d48",
+          "edgeType": "Edge",
+          "source": "8b9d5dca69d844519f40845cda484128",
+          "target": "273e0e6f32b444de99a426a91708193b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "4ade3ca85b9e455e8e9f7a82a95202e5",
+          "edgeType": "Edge",
+          "source": "273e0e6f32b444de99a426a91708193b",
+          "target": "d5f9cb6cda6b4611be113466d9e7ec7f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "bb6ed199d35c4039a88644169bbc3ae7",
+          "edgeType": "Edge",
+          "source": "558a2eb298564ce69493bb30b119ab2c",
+          "target": "d0714572757146ada7b0f00989aaba69",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "438e506c89ac48fa81fc383ae0395404",
+          "edgeType": "Edge",
+          "source": "d0714572757146ada7b0f00989aaba69",
+          "target": "7c4814216d3c4b848527bbcb85f3e85d",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "b2be2225ebc148aaa47677ac64d52544": {
+      "id": "b2be2225ebc148aaa47677ac64d52544",
+      "name": "player_name",
+      "label": "Player Name",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY3NTg1MTI0MjE1NyBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    },
+    "83021d4f4b984106851e1b37cd621098": {
+      "id": "83021d4f4b984106851e1b37cd621098",
+      "name": "check_player_name",
+      "label": "Check Player Name",
+      "varType": "reference",
+      "table": "x_snc_cofama_player",
+      "category": "vaInputs"
+    },
+    "1c80d97add654706bbdd6bbce5e98504": {
+      "id": "1c80d97add654706bbdd6bbce5e98504",
+      "name": "create_player",
+      "label": "Create Player",
+      "varType": "reference",
+      "table": "x_snc_cofama_player",
+      "inactive": false,
+      "category": "vaInputs"
+    },
+    "59b2c20c2d024ba5b1cdeda115912615": {
+      "id": "59b2c20c2d024ba5b1cdeda115912615",
+      "name": "number_selection",
+      "label": "Number Selection",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "1",
+          "value": "German"
+        },
+        {
+          "label": "2",
+          "value": "French"
+        },
+        {
+          "label": "3",
+          "value": "Dutch",
+          "checked": true
+        },
+        {
+          "label": "4",
+          "value": "Spanish",
+          "checked": true
+        },
+        {
+          "label": "5",
+          "value": "Japanese",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "dd226bf8c3114e8880712cf01b930743": {
+      "id": "dd226bf8c3114e8880712cf01b930743",
+      "name": "set_start_time",
+      "label": "Set Start Time",
+      "varType": "reference",
+      "table": "x_snc_cofama_player",
+      "inactive": true,
+      "category": "vaInputs"
+    },
+    "68d27651ef424547a7faba49ff242a1b": {
+      "id": "68d27651ef424547a7faba49ff242a1b",
+      "value": {
+        "mode": "script",
+        "value": "(function execute() {\n    var datetime = new GlideDateTime();\n    gs.info(datetime);\n    return datetime;\n})()\n"
+      },
+      "name": "datetime",
+      "label": "datetime",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "ec30953e5c14407cabdfa34e01ede9d7": {
+      "id": "ec30953e5c14407cabdfa34e01ede9d7",
+      "name": "set_end_time_and_score",
+      "label": "Set End Time And Score",
+      "varType": "reference",
+      "table": "",
+      "inactive": true,
+      "category": "vaInputs"
+    },
+    "11e0d187f1fc41c3940425499fd56299": {
+      "id": "11e0d187f1fc41c3940425499fd56299",
+      "value": {
+        "mode": "script",
+        "value": "(function execute() {\n    var playerTable = new GlideRecord('x_snc_cofama_player');\n    playerTable.addQuery('player_name',vaVars.player_name);\n    playerTable.query();\n\n    while (playerTable.next()) {\n        var diff = GlideDateTime.subtract(player.start_time, player.end_time);\n            var score = diff.getNumericValue();\n            gs.info(score);\n            return score;\n    }\n\n})()\n"
+      },
+      "name": "generateScore",
+      "label": "generateScore",
+      "varType": "script",
+      "category": "vaVars"
+    }
+  }
+}</graph>
+        <key_phrases>Cofama,coffee,drama</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Cofama</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>manish.kothari@snc</sys_created_by>
+        <sys_created_on>2023-02-08 10:13:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ba29618b1bfc2950988dc8851a4bcbc5</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Cofama</sys_name>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name>sys_cb_topic_ba29618b1bfc2950988dc8851a4bcbc5</sys_update_name>
+        <sys_updated_by>manish.kothari@snc</sys_updated_by>
+        <sys_updated_on>2023-02-10 02:37:14</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=ba29618b1bfc2950988dc8851a4bcbc5"/>
+</record_update>

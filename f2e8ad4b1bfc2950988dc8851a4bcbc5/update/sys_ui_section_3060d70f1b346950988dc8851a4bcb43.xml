@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="3060d70f1b346950988dc8851a4bcb43" sys_domain="global" table="x_snc_cofama_player" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>player_name</element>
+            <position>0</position>
+            <sys_created_by>manish.kothari@snc</sys_created_by>
+            <sys_created_on>2023-02-08 17:44:42</sys_created_on>
+            <sys_id>45605b0f1b346950988dc8851a4bcbdd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_cofama_player" sys_domain="global" view="Default view">3060d70f1b346950988dc8851a4bcb43</sys_ui_section>
+            <sys_updated_by>manish.kothari@snc</sys_updated_by>
+            <sys_updated_on>2023-02-08 17:44:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>score</element>
+            <position>1</position>
+            <sys_created_by>manish.kothari@snc</sys_created_by>
+            <sys_created_on>2023-02-08 18:43:56</sys_created_on>
+            <sys_id>34fd130b1b746950988dc8851a4bcbd1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_cofama_player" sys_domain="global" view="Default view">3060d70f1b346950988dc8851a4bcb43</sys_ui_section>
+            <sys_updated_by>manish.kothari@snc</sys_updated_by>
+            <sys_updated_on>2023-02-08 18:43:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>start_time</element>
+            <position>2</position>
+            <sys_created_by>manish.kothari@snc</sys_created_by>
+            <sys_created_on>2023-02-09 10:17:20</sys_created_on>
+            <sys_id>2193f2931b30a950988dc8851a4bcb08</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_cofama_player" sys_domain="global" view="Default view">3060d70f1b346950988dc8851a4bcb43</sys_ui_section>
+            <sys_updated_by>manish.kothari@snc</sys_updated_by>
+            <sys_updated_on>2023-02-09 10:17:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>end_time</element>
+            <position>3</position>
+            <sys_created_by>manish.kothari@snc</sys_created_by>
+            <sys_created_on>2023-02-09 10:17:20</sys_created_on>
+            <sys_id>a993f2931b30a950988dc8851a4bcb0f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_cofama_player" sys_domain="global" view="Default view">3060d70f1b346950988dc8851a4bcb43</sys_ui_section>
+            <sys_updated_by>manish.kothari@snc</sys_updated_by>
+            <sys_updated_on>2023-02-09 10:17:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_cofama_player</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>manish.kothari@snc</sys_created_by>
+            <sys_created_on>2023-02-08 17:44:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3060d70f1b346950988dc8851a4bcb43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_cofama_player</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+            <sys_update_name>sys_ui_section_3060d70f1b346950988dc8851a4bcb43</sys_update_name>
+            <sys_updated_by>manish.kothari@snc</sys_updated_by>
+            <sys_updated_on>2023-02-08 17:44:42</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

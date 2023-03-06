@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c01fc3cb1b346950988dc8851a4bcb18" label="Player" max_length="40" name="x_snc_cofama_player" type="collection">
+        <element label="End Time" max_length="40" name="end_time" type="glide_date_time"/>
+        <element label="Player Name" mandatory="true" max_length="40" name="player_name" type="string"/>
+        <element label="Score" max_length="40" name="score" type="integer"/>
+        <element label="Start Time" max_length="40" name="start_time" type="glide_date_time"/>
+    </element>
+</database>

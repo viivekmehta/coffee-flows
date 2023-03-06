@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="scope_master=source_record" db_object_id="155bc4b0db8da1105ca1232d139619bb" label="External Related Files" max_length="40" name="sn_external_related_files0004" type="collection"/>
+</database>

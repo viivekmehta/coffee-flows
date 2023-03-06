@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>4</key>
+        <language>en</language>
+        <message>4</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>manish.kothari@snc</sys_created_by>
+        <sys_created_on>2023-02-08 18:37:14</sys_created_on>
+        <sys_id>aa6c1b871b746950988dc8851a4bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4</sys_name>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name>sys_ui_message_aa6c1b871b746950988dc8851a4bcb5f</sys_update_name>
+        <sys_updated_by>manish.kothari@snc</sys_updated_by>
+        <sys_updated_on>2023-02-08 18:37:14</sys_updated_on>
+    </sys_ui_message>
+</record_update>

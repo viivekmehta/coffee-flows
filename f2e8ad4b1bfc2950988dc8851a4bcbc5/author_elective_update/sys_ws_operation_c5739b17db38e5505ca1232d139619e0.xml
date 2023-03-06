@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="DELETE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Save Cofama User Details</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var selectedOptions = request.body.data.selectedOptions;
+    var setupType = request.body.data.setupType;
+//     if (!gs.nil((request.queryParams['user_id']).toString())) {
+//         gs.info("user id is => " + request.queryParams['user_id']);
+//         orders = orders.orders.filter(function(itm) {
+//             return ((request.queryParams['user_id']).toString()).indexOf(itm.user_id) > -1;
+//         });
+//         orders = {
+//             'orders': orders
+//         };
+//     }
+
+    response.setBody({"ok":"done"});
+    response.setStatus(200);
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_cofama/cofama_flow_details</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 12:37:14</sys_created_on>
+        <sys_id>c5739b17db38e5505ca1232d139619e0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Save Cofama User Details</sys_name>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name>sys_ws_operation_c5739b17db38e5505ca1232d139619e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 12:54:29</sys_updated_on>
+        <web_service_definition display_value="Cofama Flow Details">23435717db38e5505ca1232d13961976</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</application>
+        <file_path/>
+        <instance_id>82c3fb28dbed48d407072f17d4961928</instance_id>
+        <instance_name>empvivek</instance_name>
+        <name>sys_ws_operation_c5739b17db38e5505ca1232d139619e0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl&gt;cf9d01d3e73003009d6247e603f6a990&lt;/enforce_acl&gt;&lt;http_method&gt;POST&lt;/http_method&gt;&lt;name&gt;Save Cofama User Details&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var selectedOptions = request.body.data.selectedOptions;
+    var setupType = request.body.data.setupType;
+//     if (!gs.nil((request.queryParams['user_id']).toString())) {
+//         gs.info("user id is =&gt; " + request.queryParams['user_id']);
+//         orders = orders.orders.filter(function(itm) {
+//             return ((request.queryParams['user_id']).toString()).indexOf(itm.user_id) &gt; -1;
+//         });
+//         orders = {
+//             'orders': orders
+//         };
+//     }
+
+    response.setBody({"ok":"done"});
+    response.setStatus(200);
+
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/x_snc_cofama/cofama_flow_details&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;requires_snc_internal_role&gt;true&lt;/requires_snc_internal_role&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-02-09 12:37:14&lt;/sys_created_on&gt;&lt;sys_id&gt;c5739b17db38e5505ca1232d139619e0&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Save Cofama User Details&lt;/sys_name&gt;&lt;sys_package display_value="Cofama" source="x_snc_cofama"&gt;f2e8ad4b1bfc2950988dc8851a4bcbc5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cofama"&gt;f2e8ad4b1bfc2950988dc8851a4bcbc5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_c5739b17db38e5505ca1232d139619e0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-02-09 12:54:29&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="Cofama Flow Details"&gt;23435717db38e5505ca1232d13961976&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-617920570</payload_hash>
+        <record_name>Save Cofama User Details</record_name>
+        <reverted_from/>
+        <source>32e8ad4b1bfc2950988dc8851a4bcbc7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 12:54:29</sys_created_on>
+        <sys_id>938793d7db38e5505ca1232d139619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186363ddbe00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 12:54:29</sys_updated_on>
+        <type>Scripted REST Resource</type>
+        <update_guid>5b8793d7ed38e550f8c3ef29a088d8fa</update_guid>
+        <update_guid_history>5b8793d7ed38e550f8c3ef29a088d8fa:-617920570,46c49f577338e550194af836010dc781:1631620164,b204d3572138e550c8539acacdcb7554:-574041411,9bc3df178f38e5509138836f1ae750ad:-1939812179,32939b176c38e550fb4161a2c84e5de7:1044430209</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 12:54:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_operation">sys_ws_operation</sys_db_object>
+        <sys_id>011594ddde8f45d08017d582475fbf10</sys_id>
+        <sys_metadata>c5739b17db38e5505ca1232d139619e0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Save Cofama User Details</sys_name>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_scope_delete display_value="">238dc62dc621400d85b11b4e2d1585a9</sys_scope_delete>
+        <sys_update_name>sys_ws_operation_c5739b17db38e5505ca1232d139619e0</sys_update_name>
+        <sys_update_version display_value="sys_ws_operation_c5739b17db38e5505ca1232d139619e0">938793d7db38e5505ca1232d139619fb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 12:54:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
