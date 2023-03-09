@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-03-09 13:01:23</sys_created_on>
+        <sys_id>51a5afd41b69e150988dc8851a4bcb79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>discovery_credentials</sys_name>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name>sys_scope_privilege_51a5afd41b69e150988dc8851a4bcb79</sys_update_name>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-03-09 13:01:23</sys_updated_on>
+        <target_name>discovery_credentials</target_name>
+        <target_scope display_value="AWS Translate Spoke">3198bea9878511109da640809bbb3594</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>
