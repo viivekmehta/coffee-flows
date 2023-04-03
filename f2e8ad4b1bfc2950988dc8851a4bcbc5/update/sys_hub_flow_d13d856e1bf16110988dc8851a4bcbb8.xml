@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>send_sms</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Send SMS</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-03-28 11:57:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d13d856e1bf16110988dc8851a4bcbb8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Send SMS</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name>sys_hub_flow_d13d856e1bf16110988dc8851a4bcbb8</sys_update_name>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-03-28 12:20:14</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d13d856e1bf16110988dc8851a4bcbb8^sys_idNOT IN23ae0dee1bf16110988dc8851a4bcbd6"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Send SMS">d13d856e1bf16110988dc8851a4bcbb8</flow>
+        <name>Run Once</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-03-28 12:03:50</sys_created_on>
+        <sys_id>23ae0dee1bf16110988dc8851a4bcbd6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-03-28 12:20:14</sys_updated_on>
+        <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>run_once</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=23ae0dee1bf16110988dc8851a4bcbd6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>23ae0dee1bf16110988dc8851a4bcbd6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-03-28 12:03:50</sys_created_on>
+        <sys_id>2bae0dee1bf16110988dc8851a4bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-03-28 12:03:50</sys_updated_on>
+        <value>2023-08-09 10:00:00</value>
+        <variable display_value="Run in">92afcd94c32222002841b63b12d3aee8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_0a76e504c32222002841b63b12d3aeac^id=23ae0dee1bf16110988dc8851a4bcbd6"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d13d856e1bf16110988dc8851a4bcbb8^sys_idNOT IN113d856e1bf16110988dc8851a4bcbba"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d13d856e1bf16110988dc8851a4bcbb8</id>
+        <name>Send SMS</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-03-28 11:57:23</sys_created_on>
+        <sys_id>113d856e1bf16110988dc8851a4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-03-28 11:57:23</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=113d856e1bf16110988dc8851a4bcbba"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d13d856e1bf16110988dc8851a4bcbb8^sys_idNOT IN125055621b356110988dc8851a4bcbc0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Send SMS">6d67c7c0736633004b134a2214f6a76d</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Send SMS">d13d856e1bf16110988dc8851a4bcbb8</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-03-28 12:11:07</sys_created_on>
+        <sys_id>125055621b356110988dc8851a4bcbc0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-03-28 12:20:14</sys_updated_on>
+        <ui_id>d6e67e58-3e42-4a59-9f1d-9ad692a7ca33</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=125055621b356110988dc8851a4bcbc0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>125055621b356110988dc8851a4bcbc0</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-03-28 12:11:07</sys_created_on>
+        <sys_id>565055621b356110988dc8851a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-03-28 12:11:07</sys_updated_on>
+        <value>+917017775650</value>
+        <variable display_value="To">e167c7c0736633004b134a2214f6a774</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>125055621b356110988dc8851a4bcbc0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-03-28 12:11:07</sys_created_on>
+        <sys_id>925055621b356110988dc8851a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-03-28 12:11:07</sys_updated_on>
+        <value>+12133221645</value>
+        <variable display_value="From">ed67c7c0736633004b134a2214f6a76e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>125055621b356110988dc8851a4bcbc0</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-03-28 12:11:07</sys_created_on>
+        <sys_id>de5055621b356110988dc8851a4bcbc2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-03-28 12:20:14</sys_updated_on>
+        <value>Hi, Your OTP is : 12345</value>
+        <variable display_value="Text Message">ed67c7c0736633004b134a2214f6a778</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_6d67c7c0736633004b134a2214f6a76d^id=125055621b356110988dc8851a4bcbc0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=125055621b356110988dc8851a4bcbc0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=125055621b356110988dc8851a4bcbc0"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=d13d856e1bf16110988dc8851a4bcbb8"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=d13d856e1bf16110988dc8851a4bcbb8"/>
+</record_update>

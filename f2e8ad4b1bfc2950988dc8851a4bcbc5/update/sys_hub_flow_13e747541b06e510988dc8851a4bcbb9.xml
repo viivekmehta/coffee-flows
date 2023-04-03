@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>1272490ddb3d61105ca1232d139619cd</copied_from>
+        <copied_from_name>Instruction Translator</copied_from_name>
+        <description/>
+        <internal_name>instruction_translator</internal_name>
+        <label_cache>[{"name":"2a9cda44-cd0f-44a0-8c8f-a83e10b9d0b2.translation.TranslatedText","label":"1 - Translate Text➛Translation➛Translated Text","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"77a5dc34-3434-4677-9997-9c78cb26df17.__dont_treat_as_error__","label":"2 - RoboSettings➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"916e6cb9-7898-4fdf-9f5a-c89fb0336fa6"}},{"name":"77a5dc34-3434-4677-9997-9c78cb26df17.__action_status__","label":"2 - RoboSettings➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"12e5d1f6-30af-44a9-8c6f-fcb6e4fc927f"}},{"name":"2a9cda44-cd0f-44a0-8c8f-a83e10b9d0b2.__dont_treat_as_error__","label":"1 - Translate Text➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"d1cd398c-6322-4004-b7bb-76ec45190860"}},{"name":"2a9cda44-cd0f-44a0-8c8f-a83e10b9d0b2.__action_status__","label":"1 - Translate Text➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDdcfa98f61bd1111050a69cb869ac12bd","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"6b38a527-deea-4d42-99fc-1872026a4fec"}},{"name":"2a9cda44-cd0f-44a0-8c8f-a83e10b9d0b2.translation","label":"1 - Translate Text➛Translation","reference_display":"Translation","type":"object","base_type":"object","attributes":{"sourceId":"ffff40b6-30c2-46d9-a488-5ee0adcca85b","uiTypeLabel":"Object","co_type_name":"FD1cfa98f601d111105eefae759cff6abb","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"c8725ec4-18e5-4f45-b7d8-47ae48a43fbf","uiType":"object","uiUniqueId":"a183570b-0eee-42d7-b88c-7469746eea8a"}},{"name":"8ac5be08-9030-4d65-969b-6002a71adb64.languages_detected","label":"1 - Detect Dominant Language➛Languages Detected","reference_display":"Languages Detected","type":"array.object","base_type":"array.object","attributes":{"sourceId":"3c19e83b-e623-4e0e-955e-8c73f2e88ce6","child_name":"Language","uiUniqueId":"bfabd123-4a9f-4764-a6bb-58172ac6d3ae","uiTypeLabel":"Array.Object","co_type_name":"FD0b6fd9729b951110b1587078f88b5ed9","child_label":"Language","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"cb846704-74e3-486a-8e88-6a611f037263","uiType":"array.object","child_type":"object","child_uiUniqueId":"b9a06cc3-762a-471b-a0e6-92348e3d81b8"}},{"name":"8ac5be08-9030-4d65-969b-6002a71adb64.__dont_treat_as_error__","label":"1 - Detect Dominant Language➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"0b675b72-f188-489e-8569-c3b2848346a7"}},{"name":"8ac5be08-9030-4d65-969b-6002a71adb64.__action_status__","label":"1 - Detect Dominant Language➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDcb6fd9726f95111056cee135f92bc3db","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"546a9d17-7e7f-4192-99a3-de35c3d6662d"}},{"name":"cc609d2d-8461-490a-99ea-4a1618c93b6c.__dont_treat_as_error__","label":"1 - Translate Text➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"d1cd398c-6322-4004-b7bb-76ec45190860"}},{"name":"cc609d2d-8461-490a-99ea-4a1618c93b6c.__action_status__","label":"1 - Translate Text➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDdcfa98f61bd1111050a69cb869ac12bd","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"6b38a527-deea-4d42-99fc-1872026a4fec"}},{"name":"cc609d2d-8461-490a-99ea-4a1618c93b6c.translation","label":"1 - Translate Text➛Translation","reference_display":"Translation","type":"object","base_type":"object","attributes":{"sourceId":"ffff40b6-30c2-46d9-a488-5ee0adcca85b","uiTypeLabel":"Object","co_type_name":"FD1cfa98f601d111105eefae759cff6abb","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"c8725ec4-18e5-4f45-b7d8-47ae48a43fbf","uiType":"object","uiUniqueId":"a183570b-0eee-42d7-b88c-7469746eea8a"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Instruction Translator</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-03 07:22:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>13e747541b06e510988dc8851a4bcbb9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Instruction Translator</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name>sys_hub_flow_13e747541b06e510988dc8851a4bcbb9</sys_update_name>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-03 07:22:57</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=13e747541b06e510988dc8851a4bcbb9^sys_idNOT INebe747541b06e510988dc8851a4bcbe9"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Instruction Translator">13e747541b06e510988dc8851a4bcbb9</flow>
+        <name>Run Once</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-03 07:22:57</sys_created_on>
+        <sys_id>ebe747541b06e510988dc8851a4bcbe9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-03 07:22:57</sys_updated_on>
+        <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>run_once</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ebe747541b06e510988dc8851a4bcbe9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>ebe747541b06e510988dc8851a4bcbe9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-03 07:22:57</sys_created_on>
+        <sys_id>6fe747541b06e510988dc8851a4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-03 07:22:57</sys_updated_on>
+        <value>2023-03-16 11:30:00</value>
+        <variable display_value="Run in">92afcd94c32222002841b63b12d3aee8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_0a76e504c32222002841b63b12d3aeac^id=ebe747541b06e510988dc8851a4bcbe9"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=13e747541b06e510988dc8851a4bcbb9^sys_idNOT IN93e747541b06e510988dc8851a4bcbbc"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>13e747541b06e510988dc8851a4bcbb9</id>
+        <name>Instruction Translator</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-03 07:22:55</sys_created_on>
+        <sys_id>93e747541b06e510988dc8851a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-03 07:22:55</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=93e747541b06e510988dc8851a4bcbbc"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=13e747541b06e510988dc8851a4bcbb9^sys_idNOT IN63e747541b06e510988dc8851a4bcbda,67e747541b06e510988dc8851a4bcbe8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Translate Text">4cfa98f653d111107d07ddeeff7b1220</action_type>
+        <action_type_parent display_value="Translate Text">0350dc3253d111107d07ddeeff7b1235</action_type_parent>
+        <comment/>
+        <compiled_snapshot>4cfa98f653d111107d07ddeeff7b1220</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Instruction Translator">13e747541b06e510988dc8851a4bcbb9</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-03 07:22:57</sys_created_on>
+        <sys_id>63e747541b06e510988dc8851a4bcbda</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-03 07:22:57</sys_updated_on>
+        <ui_id>2a9cda44-cd0f-44a0-8c8f-a83e10b9d0b2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=63e747541b06e510988dc8851a4bcbda"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>63e747541b06e510988dc8851a4bcbda</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-03 07:22:57</sys_created_on>
+        <sys_id>a3e747541b06e510988dc8851a4bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-03 07:22:57</sys_updated_on>
+        <value>-- None --</value>
+        <variable display_value="Target Language">b0a9d9c153e111107d07ddeeff7b1216</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>63e747541b06e510988dc8851a4bcbda</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-03 07:22:57</sys_created_on>
+        <sys_id>ebe747541b06e510988dc8851a4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-03 07:22:57</sys_updated_on>
+        <value>en</value>
+        <variable display_value="Source Language">f8a9d9c153e111107d07ddeeff7b1209</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_4cfa98f653d111107d07ddeeff7b1220^id=63e747541b06e510988dc8851a4bcbda"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=63e747541b06e510988dc8851a4bcbda"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=63e747541b06e510988dc8851a4bcbda"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="RoboSettings">f812c14ddb3d61105ca1232d13961934</action_type>
+        <action_type_parent display_value="RoboSettings">127a277cdb3961105ca1232d139619e5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f812c14ddb3d61105ca1232d13961934</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Instruction Translator">13e747541b06e510988dc8851a4bcbb9</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-03 07:22:57</sys_created_on>
+        <sys_id>67e747541b06e510988dc8851a4bcbe8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-03 07:22:57</sys_updated_on>
+        <ui_id>77a5dc34-3434-4677-9997-9c78cb26df17</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=67e747541b06e510988dc8851a4bcbe8"/>
+    <sys_element_mapping action="delete_multiple" query="id=67e747541b06e510988dc8851a4bcbe8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>translated</field>
+        <id>67e747541b06e510988dc8851a4bcbe8</id>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-03 07:22:57</sys_created_on>
+        <sys_id>a7e747541b06e510988dc8851a4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-03 07:22:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f812c14ddb3d61105ca1232d13961934</table>
+        <value>{{2a9cda44-cd0f-44a0-8c8f-a83e10b9d0b2.translation.TranslatedText}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=67e747541b06e510988dc8851a4bcbe8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=67e747541b06e510988dc8851a4bcbe8"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=13e747541b06e510988dc8851a4bcbb9"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=13e747541b06e510988dc8851a4bcbb9"/>
+</record_update>

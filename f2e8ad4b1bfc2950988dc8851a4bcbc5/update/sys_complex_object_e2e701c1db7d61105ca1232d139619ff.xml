@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD22e701c1c57d6110f09f6e030b0e9cff</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>f2e8ad4b1bfc2950988dc8851a4bcbc5</scope_name>
+        <serialized_content>{"FlowDesigner:FD22e701c1c57d6110f09f6e030b0e9cff":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD22e701c1c57d6110f09f6e030b0e9cff.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"3dc1e735-ffcf-419d-bd56-6291f0b368c6\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD22e701c1c57d6110f09f6e030b0e9cff\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e2e701c1db7d61105ca1232d139619ff</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FD22e701c1c57d6110f09f6e030b0e9cff</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name>sys_complex_object_e2e701c1db7d61105ca1232d139619ff</sys_update_name>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:51:45</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

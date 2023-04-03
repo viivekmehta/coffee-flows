@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Metadata Retrieval Management">579fc91cdbe3c8901c7b50d3e29619be</category>
+        <copied_from>06b3da38dbab0c901c7b50d3e296199d</copied_from>
+        <copied_from_name>List Firewalls</copied_from_name>
+        <description>&lt;p&gt;Retrieves a list of firewalls available to the specified project.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Project ID&lt;/b&gt; - Unique ID of the project.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Firewalls&lt;/b&gt; - JSON  object containing Labels and Names of the firewalls.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Invalid Project ID.&lt;/li&gt;
+&lt;li&gt;Invalid authorization header. The access token you're using is either expired or invalid.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+
+&lt;p&gt; To use this action, a corresponding Google Cloud Virtual Network connection and credential must be created and associated with the Google Cloud Virtual Network Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
+        <ih_action>false</ih_action>
+        <internal_name>list_languages</internal_name>
+        <label_cache>[{"name":"{{action.translated}}","label":"action➛translated","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.region}}","label":"action➛Region","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ae473d27-4784-45bf-aaa8-1e1fa9e028d5"}},{"name":"{{action.source_language_code}}","label":"action➛Source Language Code","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.target_language_code}}","label":"action➛Target Language Code","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.text}}","label":"action➛Text","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.source_language}}","label":"action➛Source Language","type":"action","ref":"","reference_display":"","base_type":"dynamic_choice","parent_table_name":"","column_name":"","choices":[{"label":"Afrikaans","value":"af","order":0.0},{"label":"Albanian","value":"sq","order":1.0},{"label":"Amharic","value":"am","order":2.0},{"label":"Arabic","value":"ar","order":3.0},{"label":"Armenian","value":"hy","order":4.0},{"label":"Auto","value":"auto","order":5.0},{"label":"Azerbaijani","value":"az","order":6.0},{"label":"Bengali","value":"bn","order":7.0},{"label":"Bosnian","value":"bs","order":8.0},{"label":"Bulgarian","value":"bg","order":9.0},{"label":"Canadian French","value":"fr-CA","order":10.0},{"label":"Catalan","value":"ca","order":11.0},{"label":"Chinese","value":"zh","order":12.0},{"label":"Chinese Traditional","value":"zh-TW","order":13.0},{"label":"Croatian","value":"hr","order":14.0},{"label":"Czech","value":"cs","order":15.0},{"label":"Danish","value":"da","order":16.0},{"label":"Dari","value":"fa-AF","order":17.0},{"label":"Dutch","value":"nl","order":18.0},{"label":"English","value":"en","order":19.0},{"label":"Estonian","value":"et","order":20.0},{"label":"Finnish","value":"fi","order":21.0},{"label":"French","value":"fr","order":22.0},{"label":"Georgian","value":"ka","order":23.0},{"label":"German","value":"de","order":24.0},{"label":"Greek","value":"el","order":25.0},{"label":"Gujarati","value":"gu","order":26.0},{"label":"Haitian Creole","value":"ht","order":27.0},{"label":"Hausa","value":"ha","order":28.0},{"label":"Hebrew","value":"he","order":29.0},{"label":"Hindi","value":"hi","order":30.0},{"label":"Hungarian","value":"hu","order":31.0},{"label":"Icelandic","value":"is","order":32.0},{"label":"Indonesian","value":"id","order":33.0},{"label":"Irish","value":"ga","order":34.0},{"label":"Italian","value":"it","order":35.0},{"label":"Japanese","value":"ja","order":36.0},{"label":"Kannada","value":"kn","order":37.0},{"label":"Kazakh","value":"kk","order":38.0},{"label":"Korean","value":"ko","order":39.0},{"label":"Latvian","value":"lv","order":40.0},{"label":"Lithuanian","value":"lt","order":41.0},{"label":"Macedonian","value":"mk","order":42.0},{"label":"Malay","value":"ms","order":43.0},{"label":"Malayalam","value":"ml","order":44.0},{"label":"Maltese","value":"mt","order":45.0},{"label":"Marathi","value":"mr","order":46.0},{"label":"Mexican Spanish","value":"es-MX","order":47.0},{"label":"Mongolian","value":"mn","order":48.0},{"label":"Norwegian","value":"no","order":49.0},{"label":"Pashto","value":"ps","order":50.0},{"label":"Persian","value":"fa","order":51.0},{"label":"Polish","value":"pl","order":52.0},{"label":"Portugal Portuguese","value":"pt-PT","order":53.0},{"label":"Portuguese","value":"pt","order":54.0},{"label":"Punjabi","value":"pa","order":55.0},{"label":"Romanian","value":"ro","order":56.0},{"label":"Russian","value":"ru","order":57.0},{"label":"Serbian","value":"sr","order":58.0},{"label":"Sinhala","value":"si","order":59.0},{"label":"Slovak","value":"sk","order":60.0},{"label":"Slovenian","value":"sl","order":61.0},{"label":"Somali","value":"so","order":62.0},{"label":"Spanish","value":"es","order":63.0},{"label":"Swahili","value":"sw","order":64.0},{"label":"Swedish","value":"sv","order":65.0},{"label":"Tagalog","value":"tl","order":66.0},{"label":"Tamil","value":"ta","order":67.0},{"label":"Telugu","value":"te","order":68.0},{"label":"Thai","value":"th","order":69.0},{"label":"Turkish","value":"tr","order":70.0},{"label":"Ukrainian","value":"uk","order":71.0},{"label":"Urdu","value":"ur","order":72.0},{"label":"Uzbek","value":"uz","order":73.0},{"label":"Vietnamese","value":"vi","order":74.0},{"label":"Welsh","value":"cy","order":75.0}],"attributes":{"sourceId":"","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","dynamic":"true","uiUniqueId":"efa8d909-b2be-4042-b6db-ea95d83802a4"}},{"name":"{{action.target_language}}","label":"action➛Target Language","type":"action","ref":"","reference_display":"","base_type":"dynamic_choice","parent_table_name":"","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"e99eb7f5-23e2-4a7c-a0ca-703ee713bc4a"}},{"name":"{{action.project_id}}","label":"action➛language","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6394a22b-ff2b-45bf-8032-021ae2670c9b"}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].region}}","label":"step➛Pre Processing➛Region","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].source_language_code}}","label":"step➛Pre Processing➛Source Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a1f5d7e4-5d51-4b76-8057-fd856f876a20].payload}}","label":"step➛Payload Builder step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4674a2e0-b788-465d-a024-d14ad870a07e].response_body}}","label":"step➛Translate Text➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[266b7c2d-6f64-4bac-9bb4-aaeba063fc43].root.SourceLanguageCode}}","label":"step➛JSON Parser step➛Translation➛Source Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[266b7c2d-6f64-4bac-9bb4-aaeba063fc43].root.TargetLanguageCode}}","label":"step➛JSON Parser step➛Translation➛Target Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[266b7c2d-6f64-4bac-9bb4-aaeba063fc43].root.TranslatedText}}","label":"step➛JSON Parser step➛Translation➛Translated Text","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[266b7c2d-6f64-4bac-9bb4-aaeba063fc43].root}}","label":"step➛JSON Parser step➛Translation","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].__step_status__.code}}","label":"step➛Pre Processing➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].__step_status__.message}}","label":"step➛Pre Processing➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a1f5d7e4-5d51-4b76-8057-fd856f876a20].__step_status__.code}}","label":"step➛Payload Builder step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a1f5d7e4-5d51-4b76-8057-fd856f876a20].__step_status__.message}}","label":"step➛Payload Builder step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[266b7c2d-6f64-4bac-9bb4-aaeba063fc43].__step_status__.code}}","label":"step➛JSON Parser step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[266b7c2d-6f64-4bac-9bb4-aaeba063fc43].__step_status__.message}}","label":"step➛JSON Parser step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4674a2e0-b788-465d-a024-d14ad870a07e].__step_status__.code}}","label":"step➛Translate Text➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4674a2e0-b788-465d-a024-d14ad870a07e].__step_status__.message}}","label":"step➛Translate Text➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4674a2e0-b788-465d-a024-d14ad870a07e].status_code}}","label":"step➛Translate Text➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].variable}}","label":"step➛Post Processing &amp; Error Handling➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation}}","label":"step➛Post Processing &amp; Error Handling➛Translation","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.translation_child1}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Translation_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.Source_Language_Code}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Source Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.SourceLanguageCode}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Source Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.translation_child2}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Translation_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.translation_child3}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Translation_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.Target_Language_Code}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Target Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.TargetLanguageCode}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Target Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.Translated_Text}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Translated Text","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.TranslatedText}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Translated Text","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].__step_status__.code}}","label":"step➛Post Processing &amp; Error Handling➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].__step_status__.message}}","label":"step➛Post Processing &amp; Error Handling➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a1f936dc-58a0-4565-aa0e-465a8d9901f9].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a1f936dc-58a0-4565-aa0e-465a8d9901f9].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a1f936dc-58a0-4565-aa0e-465a8d9901f9].region}}","label":"step➛Pre Processing➛Region","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[c995f3d3-9ce9-4d36-93d5-2fa46c73108c].payload}}","label":"step➛Payload Builder step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b4684682-1d5f-46ec-8a4c-6f9756b59777].status_code}}","label":"step➛Detect Dominant Language➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[b4684682-1d5f-46ec-8a4c-6f9756b59777].response_body}}","label":"step➛Detect Dominant Language➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a1f936dc-58a0-4565-aa0e-465a8d9901f9].__step_status__.code}}","label":"step➛Pre Processing➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a1f936dc-58a0-4565-aa0e-465a8d9901f9].__step_status__.message}}","label":"step➛Pre Processing➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c995f3d3-9ce9-4d36-93d5-2fa46c73108c].__step_status__.code}}","label":"step➛Payload Builder step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c995f3d3-9ce9-4d36-93d5-2fa46c73108c].__step_status__.message}}","label":"step➛Payload Builder step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b4684682-1d5f-46ec-8a4c-6f9756b59777].__step_status__.code}}","label":"step➛Detect Dominant Language➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b4684682-1d5f-46ec-8a4c-6f9756b59777].__step_status__.message}}","label":"step➛Detect Dominant Language➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].__step_status__.code}}","label":"step➛Post Processing &amp; Error Handling➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].__step_status__.message}}","label":"step➛Post Processing &amp; Error Handling➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].dominant_language}}","label":"step➛Post Processing &amp; Error Handling➛Dominant Language","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.language}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.language.language_child1}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.language.Language_Code}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.language.LanguageCode}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.language.language_child2}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.language.Score}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Score","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a1f936dc-58a0-4565-aa0e-465a8d9901f9].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[7a7bef41-28b8-4f28-be41-15a154f5078e].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7a7bef41-28b8-4f28-be41-15a154f5078e].region}}","label":"step➛Pre Processing➛Region","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ae34002a-e8f4-41a5-9390-2ecf60f0d0cb].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[ae34002a-e8f4-41a5-9390-2ecf60f0d0cb].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[7a7bef41-28b8-4f28-be41-15a154f5078e].__step_status__.code}}","label":"step➛Pre Processing➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7a7bef41-28b8-4f28-be41-15a154f5078e].__step_status__.message}}","label":"step➛Pre Processing➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ae34002a-e8f4-41a5-9390-2ecf60f0d0cb].__step_status__.code}}","label":"step➛REST step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ae34002a-e8f4-41a5-9390-2ecf60f0d0cb].__step_status__.message}}","label":"step➛REST step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c67e06c9-74e0-4787-8144-11baa35cfbed].__step_status__.code}}","label":"step➛Post Processing➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c67e06c9-74e0-4787-8144-11baa35cfbed].__step_status__.message}}","label":"step➛Post Processing➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c67e06c9-74e0-4787-8144-11baa35cfbed].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c67e06c9-74e0-4787-8144-11baa35cfbed].languages}}","label":"step➛Post Processing➛Languages","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages.LanguageCode}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages.Score}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Score","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].variable}}","label":"step➛Post Processing &amp; Error Handling➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Language}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages.language_child1}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages.Language_Code}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages.language_child2}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages.languages_detected_child0_child1}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Languages Detected_child0_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[05e0f78b-3c4d-4807-934a-fca10d3ad097].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[05e0f78b-3c4d-4807-934a-fca10d3ad097].region}}","label":"step➛Pre Processing➛Region","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c15f9fb-a39e-41ca-b69a-b18a51dcefcf].response_stream}}","label":"step➛Look up Languages➛Response Stream","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"visible_in_fd":"false"}},{"name":"{{step[3c15f9fb-a39e-41ca-b69a-b18a51dcefcf].response_body}}","label":"step➛Look up Languages➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[3c15f9fb-a39e-41ca-b69a-b18a51dcefcf].status_code}}","label":"step➛Look up Languages➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[303f4a1a-c29f-4a20-b1c8-e72fb0797cfc].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[303f4a1a-c29f-4a20-b1c8-e72fb0797cfc].languages}}","label":"step➛Post Processing➛Languages","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[05e0f78b-3c4d-4807-934a-fca10d3ad097].__step_status__.code}}","label":"step➛Pre Processing➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[05e0f78b-3c4d-4807-934a-fca10d3ad097].__step_status__.message}}","label":"step➛Pre Processing➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c15f9fb-a39e-41ca-b69a-b18a51dcefcf].__step_status__.code}}","label":"step➛Look up Languages➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c15f9fb-a39e-41ca-b69a-b18a51dcefcf].__step_status__.message}}","label":"step➛Look up Languages➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[303f4a1a-c29f-4a20-b1c8-e72fb0797cfc].__step_status__.code}}","label":"step➛Post Processing➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[303f4a1a-c29f-4a20-b1c8-e72fb0797cfc].__step_status__.message}}","label":"step➛Post Processing➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[315db830-992a-49ac-9e71-c817b8db4322].variable}}","label":"step➛Post Processing &amp; Error Handling➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[315db830-992a-49ac-9e71-c817b8db4322].languages}}","label":"step➛Post Processing &amp; Error Handling➛Languages","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[315db830-992a-49ac-9e71-c817b8db4322].__step_status__.code}}","label":"step➛Post Processing &amp; Error Handling➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[315db830-992a-49ac-9e71-c817b8db4322].__step_status__.message}}","label":"step➛Post Processing &amp; Error Handling➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8d21b592-bd32-4d99-ba79-3000e135d21a].response_body}}","label":"step➛Get Inventories➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8d21b592-bd32-4d99-ba79-3000e135d21a].status_code}}","label":"step➛Get Inventories➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8d21b592-bd32-4d99-ba79-3000e135d21a].error_message}}","label":"step➛Get Inventories➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].result.result_child1}}","label":"step➛Handle Errors➛result➛result_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].result.result_child2}}","label":"step➛Handle Errors➛result➛result_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].result.result_child3}}","label":"step➛Handle Errors➛result➛result_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].result.result_child4}}","label":"step➛Handle Errors➛result➛result_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].result.result_child5}}","label":"step➛Handle Errors➛result➛result_child5","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].result.result_child6}}","label":"step➛Handle Errors➛result➛result_child6","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].status}}","label":"step➛Handle Errors➛status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].error_message}}","label":"step➛Handle Errors➛error_message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8]._}}","label":"step➛Handle Errors➛","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1}}","label":"step➛Handle Errors➛results➛results","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1.id}}","label":"step➛Handle Errors➛results➛results➛id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1.name}}","label":"step➛Handle Errors➛results➛results➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1.created}}","label":"step➛Handle Errors➛results➛results➛created","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1.modified}}","label":"step➛Handle Errors➛results➛results➛modified","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1.description}}","label":"step➛Handle Errors➛results➛results➛description","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1.organisati}}","label":"step➛Handle Errors➛results➛results➛organisati","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].tables}}","label":"step➛Handle Errors➛tables","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8d21b592-bd32-4d99-ba79-3000e135d21a].u_version}}","label":"step➛Get Inventories➛Version","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8bbb19af-29ed-4481-be1f-b690485d2b94].firewalls}}","label":"step➛Prepare Firewalls➛Firewalls","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8bbb19af-29ed-4481-be1f-b690485d2b94].variable}}","label":"step➛Prepare Firewalls➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8bbb19af-29ed-4481-be1f-b690485d2b94].langs}}","label":"step➛Prepare Firewalls➛langs","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master_snapshot>864a4145db7d61105ca1232d13961935</master_snapshot>
+        <name>List Languages</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9ee701c1db7d61105ca1232d139619df</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>List Languages</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_9ee701c1db7d61105ca1232d139619df</sys_update_name>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:44</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=9ee701c1db7d61105ca1232d139619df"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9ee701c1db7d61105ca1232d139619df"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>9ee701c1db7d61105ca1232d139619df</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:23</sys_created_on>
+        <sys_id>e2e741c1db7d61105ca1232d1396191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:43:23</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">eee741c1db7d61105ca1232d13961909</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9ee701c1db7d61105ca1232d139619df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>output</field>
+        <id>9ee701c1db7d61105ca1232d139619df</id>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:23</sys_created_on>
+        <sys_id>aee741c1db7d61105ca1232d1396191d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:52:01</sys_updated_on>
+        <table>var__m_sys_hub_action_output_9ee701c1db7d61105ca1232d139619df</table>
+        <value>{{step[8bbb19af-29ed-4481-be1f-b690485d2b94].langs}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>9ee701c1db7d61105ca1232d139619df</id>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:23</sys_created_on>
+        <sys_id>b2e741c1db7d61105ca1232d1396193a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_9ee701c1db7d61105ca1232d139619df</table>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD22e701c1c57d6110f09f6e030b0e9cff":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD22e701c1c57d6110f09f6e030b0e9cff.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"3dc1e735-ffcf-419d-bd56-6291f0b368c6\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD22e701c1c57d6110f09f6e030b0e9cff\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>9ee701c1db7d61105ca1232d139619df</id>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:23</sys_created_on>
+        <sys_id>62e741c1db7d61105ca1232d1396191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:43:23</sys_updated_on>
+        <table>var__m_sys_hub_action_output_9ee701c1db7d61105ca1232d139619df</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=9ee701c1db7d61105ca1232d139619df^sys_idNOT INd6e701c1db7d61105ca1232d139619ec"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="List Languages">9ee701c1db7d61105ca1232d139619df</action>
+        <cid>8bbb19af-29ed-4481-be1f-b690485d2b94</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Prepare Firewalls</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:22</sys_created_on>
+        <sys_id>d6e701c1db7d61105ca1232d139619ec</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:04</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d6e701c1db7d61105ca1232d139619ec"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d6e701c1db7d61105ca1232d139619ec</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:22</sys_created_on>
+        <sys_id>aae701c1db7d61105ca1232d139619fb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:04</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    
+    var langs = [];
+  
+        langs.push({
+            "label": "Kazakh",// "kk",
+            "name":  "kk"
+        });
+  
+   langs.push({
+            "label": "Icelandic",// "is"
+            "name": "is"
+        });
+   langs.push({
+            "label":"Marathi",//mr
+            "name": "mr"
+        });
+  langs.push({
+            "label": "Latvian",//lv
+            "name": "lv"
+        });
+  langs.push({
+            "label": "Swahili",//sw
+            "name": "sw"
+        });
+  
+    outputs.langs = {
+        data: langs
+    }
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d6e701c1db7d61105ca1232d139619ec</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:22</sys_created_on>
+        <sys_id>e6e701c1db7d61105ca1232d139619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:43:22</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d6e701c1db7d61105ca1232d139619ec^id=d6e701c1db7d61105ca1232d139619ec"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=d6e701c1db7d61105ca1232d139619ec"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=d6e701c1db7d61105ca1232d139619ec"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d6e701c1db7d61105ca1232d139619ec^sys_idNOT INc1d94905db7d61105ca1232d139619de"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=a121c014-d4a2-4cf6-ad34-1aaa66553310</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>langs</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>langs</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Prepare Firewalls">d6e701c1db7d61105ca1232d139619ec</model>
+        <model_id>d6e701c1db7d61105ca1232d139619ec</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d6e701c1db7d61105ca1232d139619ec</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:51:44</sys_created_on>
+        <sys_id>c1d94905db7d61105ca1232d139619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:51:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d6e701c1db7d61105ca1232d139619ec"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_d6e701c1db7d61105ca1232d139619ec^sys_idNOT INc5d94905db7d61105ca1232d139619e1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>langs</element>
+        <help/>
+        <hint/>
+        <label>langs</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_d6e701c1db7d61105ca1232d139619ec</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:51:44</sys_created_on>
+        <sys_id>c5d94905db7d61105ca1232d139619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:51:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=9ee701c1db7d61105ca1232d139619df"/>
+    <sys_hub_action_output action="delete_multiple" query="model=9ee701c1db7d61105ca1232d139619df^sys_idNOT INa6e741c1db7d61105ca1232d13961901,eee741c1db7d61105ca1232d13961905,eee741c1db7d61105ca1232d13961909"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=2b067636-e9fa-4319-a85e-d5549c6610a1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Output</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="List Languages">9ee701c1db7d61105ca1232d139619df</model>
+        <model_id>9ee701c1db7d61105ca1232d139619df</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_9ee701c1db7d61105ca1232d139619df</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:22</sys_created_on>
+        <sys_id>a6e741c1db7d61105ca1232d13961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:43:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a6e741c1db7d61105ca1232d13961901"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a6e741c1db7d61105ca1232d13961901"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD22e701c1c57d6110f09f6e030b0e9cff,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=3dc1e735-ffcf-419d-bd56-6291f0b368c6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="List Languages">9ee701c1db7d61105ca1232d139619df</model>
+        <model_id>9ee701c1db7d61105ca1232d139619df</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_9ee701c1db7d61105ca1232d139619df</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:23</sys_created_on>
+        <sys_id>eee741c1db7d61105ca1232d13961905</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:51:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=eee741c1db7d61105ca1232d13961905"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eee741c1db7d61105ca1232d13961905"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a95d19be-462a-4e2d-9ef6-5e1616ef45dd,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="List Languages">9ee701c1db7d61105ca1232d139619df</model>
+        <model_id>9ee701c1db7d61105ca1232d139619df</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_9ee701c1db7d61105ca1232d139619df</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:23</sys_created_on>
+        <sys_id>eee741c1db7d61105ca1232d13961909</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:51:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=eee741c1db7d61105ca1232d13961909"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eee741c1db7d61105ca1232d13961909"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9ee701c1db7d61105ca1232d139619df"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=9ee701c1db7d61105ca1232d139619df^sys_idNOT INeae741c1db7d61105ca1232d13961920"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="List Languages">9ee701c1db7d61105ca1232d139619df</action_type_id>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:23</sys_created_on>
+        <sys_id>eae741c1db7d61105ca1232d13961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:43:23</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=eae741c1db7d61105ca1232d13961920"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_9ee701c1db7d61105ca1232d139619df"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_9ee701c1db7d61105ca1232d139619df"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_9ee701c1db7d61105ca1232d139619df^sys_idNOT IN22e741c1db7d61105ca1232d13961905,22e741c1db7d61105ca1232d13961909,a2e741c1db7d61105ca1232d1396191b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_9ee701c1db7d61105ca1232d139619df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:23</sys_created_on>
+        <sys_id>22e741c1db7d61105ca1232d13961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:43:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_9ee701c1db7d61105ca1232d139619df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:23</sys_created_on>
+        <sys_id>22e741c1db7d61105ca1232d13961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:43:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_9ee701c1db7d61105ca1232d139619df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:43:23</sys_created_on>
+        <sys_id>a2e741c1db7d61105ca1232d1396191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:43:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_9ee701c1db7d61105ca1232d139619df"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=9ee701c1db7d61105ca1232d139619df^sys_idNOT INe64a4145db7d61105ca1232d139619a1"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="List Languages">9ee701c1db7d61105ca1232d139619df</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"e64a4145db7d61105ca1232d139619a1","name":"plan","plan_signature":null}}</plan>
+        <snapshot>38fb0d1adb7521105ca1232d13961921</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e64a4145db7d61105ca1232d139619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:45</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Metadata Retrieval Management">579fc91cdbe3c8901c7b50d3e29619be</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p&gt;Retrieves a list of firewalls available to the specified project.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Project ID&lt;/b&gt; - Unique ID of the project.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Firewalls&lt;/b&gt; - JSON  object containing Labels and Names of the firewalls.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Invalid Project ID.&lt;/li&gt;
+&lt;li&gt;Invalid authorization header. The access token you're using is either expired or invalid.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+
+&lt;p&gt; To use this action, a corresponding Google Cloud Virtual Network connection and credential must be created and associated with the Google Cloud Virtual Network Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
+        <internal_name>list_languages</internal_name>
+        <label_cache>[{"name":"{{action.translated}}","label":"action➛translated","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.region}}","label":"action➛Region","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ae473d27-4784-45bf-aaa8-1e1fa9e028d5"}},{"name":"{{action.source_language_code}}","label":"action➛Source Language Code","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.target_language_code}}","label":"action➛Target Language Code","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.text}}","label":"action➛Text","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.source_language}}","label":"action➛Source Language","type":"action","ref":"","reference_display":"","base_type":"dynamic_choice","parent_table_name":"","column_name":"","choices":[{"label":"Afrikaans","value":"af","order":0.0},{"label":"Albanian","value":"sq","order":1.0},{"label":"Amharic","value":"am","order":2.0},{"label":"Arabic","value":"ar","order":3.0},{"label":"Armenian","value":"hy","order":4.0},{"label":"Auto","value":"auto","order":5.0},{"label":"Azerbaijani","value":"az","order":6.0},{"label":"Bengali","value":"bn","order":7.0},{"label":"Bosnian","value":"bs","order":8.0},{"label":"Bulgarian","value":"bg","order":9.0},{"label":"Canadian French","value":"fr-CA","order":10.0},{"label":"Catalan","value":"ca","order":11.0},{"label":"Chinese","value":"zh","order":12.0},{"label":"Chinese Traditional","value":"zh-TW","order":13.0},{"label":"Croatian","value":"hr","order":14.0},{"label":"Czech","value":"cs","order":15.0},{"label":"Danish","value":"da","order":16.0},{"label":"Dari","value":"fa-AF","order":17.0},{"label":"Dutch","value":"nl","order":18.0},{"label":"English","value":"en","order":19.0},{"label":"Estonian","value":"et","order":20.0},{"label":"Finnish","value":"fi","order":21.0},{"label":"French","value":"fr","order":22.0},{"label":"Georgian","value":"ka","order":23.0},{"label":"German","value":"de","order":24.0},{"label":"Greek","value":"el","order":25.0},{"label":"Gujarati","value":"gu","order":26.0},{"label":"Haitian Creole","value":"ht","order":27.0},{"label":"Hausa","value":"ha","order":28.0},{"label":"Hebrew","value":"he","order":29.0},{"label":"Hindi","value":"hi","order":30.0},{"label":"Hungarian","value":"hu","order":31.0},{"label":"Icelandic","value":"is","order":32.0},{"label":"Indonesian","value":"id","order":33.0},{"label":"Irish","value":"ga","order":34.0},{"label":"Italian","value":"it","order":35.0},{"label":"Japanese","value":"ja","order":36.0},{"label":"Kannada","value":"kn","order":37.0},{"label":"Kazakh","value":"kk","order":38.0},{"label":"Korean","value":"ko","order":39.0},{"label":"Latvian","value":"lv","order":40.0},{"label":"Lithuanian","value":"lt","order":41.0},{"label":"Macedonian","value":"mk","order":42.0},{"label":"Malay","value":"ms","order":43.0},{"label":"Malayalam","value":"ml","order":44.0},{"label":"Maltese","value":"mt","order":45.0},{"label":"Marathi","value":"mr","order":46.0},{"label":"Mexican Spanish","value":"es-MX","order":47.0},{"label":"Mongolian","value":"mn","order":48.0},{"label":"Norwegian","value":"no","order":49.0},{"label":"Pashto","value":"ps","order":50.0},{"label":"Persian","value":"fa","order":51.0},{"label":"Polish","value":"pl","order":52.0},{"label":"Portugal Portuguese","value":"pt-PT","order":53.0},{"label":"Portuguese","value":"pt","order":54.0},{"label":"Punjabi","value":"pa","order":55.0},{"label":"Romanian","value":"ro","order":56.0},{"label":"Russian","value":"ru","order":57.0},{"label":"Serbian","value":"sr","order":58.0},{"label":"Sinhala","value":"si","order":59.0},{"label":"Slovak","value":"sk","order":60.0},{"label":"Slovenian","value":"sl","order":61.0},{"label":"Somali","value":"so","order":62.0},{"label":"Spanish","value":"es","order":63.0},{"label":"Swahili","value":"sw","order":64.0},{"label":"Swedish","value":"sv","order":65.0},{"label":"Tagalog","value":"tl","order":66.0},{"label":"Tamil","value":"ta","order":67.0},{"label":"Telugu","value":"te","order":68.0},{"label":"Thai","value":"th","order":69.0},{"label":"Turkish","value":"tr","order":70.0},{"label":"Ukrainian","value":"uk","order":71.0},{"label":"Urdu","value":"ur","order":72.0},{"label":"Uzbek","value":"uz","order":73.0},{"label":"Vietnamese","value":"vi","order":74.0},{"label":"Welsh","value":"cy","order":75.0}],"attributes":{"sourceId":"","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","dynamic":"true","uiUniqueId":"efa8d909-b2be-4042-b6db-ea95d83802a4"}},{"name":"{{action.target_language}}","label":"action➛Target Language","type":"action","ref":"","reference_display":"","base_type":"dynamic_choice","parent_table_name":"","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"e99eb7f5-23e2-4a7c-a0ca-703ee713bc4a"}},{"name":"{{action.project_id}}","label":"action➛language","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6394a22b-ff2b-45bf-8032-021ae2670c9b"}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].region}}","label":"step➛Pre Processing➛Region","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].source_language_code}}","label":"step➛Pre Processing➛Source Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a1f5d7e4-5d51-4b76-8057-fd856f876a20].payload}}","label":"step➛Payload Builder step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4674a2e0-b788-465d-a024-d14ad870a07e].response_body}}","label":"step➛Translate Text➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[266b7c2d-6f64-4bac-9bb4-aaeba063fc43].root.SourceLanguageCode}}","label":"step➛JSON Parser step➛Translation➛Source Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[266b7c2d-6f64-4bac-9bb4-aaeba063fc43].root.TargetLanguageCode}}","label":"step➛JSON Parser step➛Translation➛Target Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[266b7c2d-6f64-4bac-9bb4-aaeba063fc43].root.TranslatedText}}","label":"step➛JSON Parser step➛Translation➛Translated Text","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[266b7c2d-6f64-4bac-9bb4-aaeba063fc43].root}}","label":"step➛JSON Parser step➛Translation","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].__step_status__.code}}","label":"step➛Pre Processing➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].__step_status__.message}}","label":"step➛Pre Processing➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a1f5d7e4-5d51-4b76-8057-fd856f876a20].__step_status__.code}}","label":"step➛Payload Builder step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a1f5d7e4-5d51-4b76-8057-fd856f876a20].__step_status__.message}}","label":"step➛Payload Builder step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[266b7c2d-6f64-4bac-9bb4-aaeba063fc43].__step_status__.code}}","label":"step➛JSON Parser step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[266b7c2d-6f64-4bac-9bb4-aaeba063fc43].__step_status__.message}}","label":"step➛JSON Parser step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4674a2e0-b788-465d-a024-d14ad870a07e].__step_status__.code}}","label":"step➛Translate Text➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4674a2e0-b788-465d-a024-d14ad870a07e].__step_status__.message}}","label":"step➛Translate Text➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4674a2e0-b788-465d-a024-d14ad870a07e].status_code}}","label":"step➛Translate Text➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].variable}}","label":"step➛Post Processing &amp; Error Handling➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation}}","label":"step➛Post Processing &amp; Error Handling➛Translation","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.translation_child1}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Translation_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.Source_Language_Code}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Source Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.SourceLanguageCode}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Source Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.translation_child2}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Translation_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.translation_child3}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Translation_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.Target_Language_Code}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Target Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.TargetLanguageCode}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Target Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.Translated_Text}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Translated Text","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].translation.TranslatedText}}","label":"step➛Post Processing &amp; Error Handling➛Translation➛Translated Text","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].__step_status__.code}}","label":"step➛Post Processing &amp; Error Handling➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].__step_status__.message}}","label":"step➛Post Processing &amp; Error Handling➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a1f936dc-58a0-4565-aa0e-465a8d9901f9].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a1f936dc-58a0-4565-aa0e-465a8d9901f9].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a1f936dc-58a0-4565-aa0e-465a8d9901f9].region}}","label":"step➛Pre Processing➛Region","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[c995f3d3-9ce9-4d36-93d5-2fa46c73108c].payload}}","label":"step➛Payload Builder step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b4684682-1d5f-46ec-8a4c-6f9756b59777].status_code}}","label":"step➛Detect Dominant Language➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[b4684682-1d5f-46ec-8a4c-6f9756b59777].response_body}}","label":"step➛Detect Dominant Language➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a1f936dc-58a0-4565-aa0e-465a8d9901f9].__step_status__.code}}","label":"step➛Pre Processing➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a1f936dc-58a0-4565-aa0e-465a8d9901f9].__step_status__.message}}","label":"step➛Pre Processing➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c995f3d3-9ce9-4d36-93d5-2fa46c73108c].__step_status__.code}}","label":"step➛Payload Builder step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c995f3d3-9ce9-4d36-93d5-2fa46c73108c].__step_status__.message}}","label":"step➛Payload Builder step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b4684682-1d5f-46ec-8a4c-6f9756b59777].__step_status__.code}}","label":"step➛Detect Dominant Language➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b4684682-1d5f-46ec-8a4c-6f9756b59777].__step_status__.message}}","label":"step➛Detect Dominant Language➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].__step_status__.code}}","label":"step➛Post Processing &amp; Error Handling➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].__step_status__.message}}","label":"step➛Post Processing &amp; Error Handling➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].dominant_language}}","label":"step➛Post Processing &amp; Error Handling➛Dominant Language","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.language}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.language.language_child1}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.language.Language_Code}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.language.LanguageCode}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.language.language_child2}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.language.Score}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Score","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a1f936dc-58a0-4565-aa0e-465a8d9901f9].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[7a7bef41-28b8-4f28-be41-15a154f5078e].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7a7bef41-28b8-4f28-be41-15a154f5078e].region}}","label":"step➛Pre Processing➛Region","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ae34002a-e8f4-41a5-9390-2ecf60f0d0cb].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[ae34002a-e8f4-41a5-9390-2ecf60f0d0cb].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[7a7bef41-28b8-4f28-be41-15a154f5078e].__step_status__.code}}","label":"step➛Pre Processing➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7a7bef41-28b8-4f28-be41-15a154f5078e].__step_status__.message}}","label":"step➛Pre Processing➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ae34002a-e8f4-41a5-9390-2ecf60f0d0cb].__step_status__.code}}","label":"step➛REST step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ae34002a-e8f4-41a5-9390-2ecf60f0d0cb].__step_status__.message}}","label":"step➛REST step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c67e06c9-74e0-4787-8144-11baa35cfbed].__step_status__.code}}","label":"step➛Post Processing➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c67e06c9-74e0-4787-8144-11baa35cfbed].__step_status__.message}}","label":"step➛Post Processing➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c67e06c9-74e0-4787-8144-11baa35cfbed].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c67e06c9-74e0-4787-8144-11baa35cfbed].languages}}","label":"step➛Post Processing➛Languages","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e4bd131a-bffe-4e40-86f1-991c4008fb5d].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages.LanguageCode}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages.Score}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Score","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].variable}}","label":"step➛Post Processing &amp; Error Handling➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Language}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages.language_child1}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages.Language_Code}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages.language_child2}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Language_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c19e83b-e623-4e0e-955e-8c73f2e88ce6].languages_detected.Languages.languages_detected_child0_child1}}","label":"step➛Post Processing &amp; Error Handling➛Languages Detected➛Language➛Languages Detected_child0_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[05e0f78b-3c4d-4807-934a-fca10d3ad097].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[05e0f78b-3c4d-4807-934a-fca10d3ad097].region}}","label":"step➛Pre Processing➛Region","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[3c15f9fb-a39e-41ca-b69a-b18a51dcefcf].response_stream}}","label":"step➛Look up Languages➛Response Stream","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"visible_in_fd":"false"}},{"name":"{{step[3c15f9fb-a39e-41ca-b69a-b18a51dcefcf].response_body}}","label":"step➛Look up Languages➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[3c15f9fb-a39e-41ca-b69a-b18a51dcefcf].status_code}}","label":"step➛Look up Languages➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[303f4a1a-c29f-4a20-b1c8-e72fb0797cfc].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[303f4a1a-c29f-4a20-b1c8-e72fb0797cfc].languages}}","label":"step➛Post Processing➛Languages","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[05e0f78b-3c4d-4807-934a-fca10d3ad097].__step_status__.code}}","label":"step➛Pre Processing➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[05e0f78b-3c4d-4807-934a-fca10d3ad097].__step_status__.message}}","label":"step➛Pre Processing➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c15f9fb-a39e-41ca-b69a-b18a51dcefcf].__step_status__.code}}","label":"step➛Look up Languages➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c15f9fb-a39e-41ca-b69a-b18a51dcefcf].__step_status__.message}}","label":"step➛Look up Languages➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[303f4a1a-c29f-4a20-b1c8-e72fb0797cfc].__step_status__.code}}","label":"step➛Post Processing➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[303f4a1a-c29f-4a20-b1c8-e72fb0797cfc].__step_status__.message}}","label":"step➛Post Processing➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[315db830-992a-49ac-9e71-c817b8db4322].variable}}","label":"step➛Post Processing &amp; Error Handling➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[315db830-992a-49ac-9e71-c817b8db4322].languages}}","label":"step➛Post Processing &amp; Error Handling➛Languages","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[315db830-992a-49ac-9e71-c817b8db4322].__step_status__.code}}","label":"step➛Post Processing &amp; Error Handling➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[315db830-992a-49ac-9e71-c817b8db4322].__step_status__.message}}","label":"step➛Post Processing &amp; Error Handling➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8d21b592-bd32-4d99-ba79-3000e135d21a].response_body}}","label":"step➛Get Inventories➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8d21b592-bd32-4d99-ba79-3000e135d21a].status_code}}","label":"step➛Get Inventories➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8d21b592-bd32-4d99-ba79-3000e135d21a].error_message}}","label":"step➛Get Inventories➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].result.result_child1}}","label":"step➛Handle Errors➛result➛result_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].result.result_child2}}","label":"step➛Handle Errors➛result➛result_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].result.result_child3}}","label":"step➛Handle Errors➛result➛result_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].result.result_child4}}","label":"step➛Handle Errors➛result➛result_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].result.result_child5}}","label":"step➛Handle Errors➛result➛result_child5","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].result.result_child6}}","label":"step➛Handle Errors➛result➛result_child6","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].status}}","label":"step➛Handle Errors➛status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].error_message}}","label":"step➛Handle Errors➛error_message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8]._}}","label":"step➛Handle Errors➛","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1}}","label":"step➛Handle Errors➛results➛results","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1.id}}","label":"step➛Handle Errors➛results➛results➛id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1.name}}","label":"step➛Handle Errors➛results➛results➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1.created}}","label":"step➛Handle Errors➛results➛results➛created","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1.modified}}","label":"step➛Handle Errors➛results➛results➛modified","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1.description}}","label":"step➛Handle Errors➛results➛results➛description","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].results.results1.organisati}}","label":"step➛Handle Errors➛results➛results➛organisati","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[19ba4267-b5d7-406e-be75-42dc8cd521d8].tables}}","label":"step➛Handle Errors➛tables","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8d21b592-bd32-4d99-ba79-3000e135d21a].u_version}}","label":"step➛Get Inventories➛Version","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8bbb19af-29ed-4481-be1f-b690485d2b94].firewalls}}","label":"step➛Prepare Firewalls➛Firewalls","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8bbb19af-29ed-4481-be1f-b690485d2b94].variable}}","label":"step➛Prepare Firewalls➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8bbb19af-29ed-4481-be1f-b690485d2b94].langs}}","label":"step➛Prepare Firewalls➛langs","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master>true</master>
+        <name>List Languages</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="List Languages">9ee701c1db7d61105ca1232d139619df</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>864a4145db7d61105ca1232d13961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=864a4145db7d61105ca1232d13961935"/>
+    <sys_variable_value action="delete_multiple" query="document_key=864a4145db7d61105ca1232d13961935"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>864a4145db7d61105ca1232d13961935</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>c64a4145db7d61105ca1232d13961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">864a4145db7d61105ca1232d1396194f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=864a4145db7d61105ca1232d13961935"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>output</field>
+        <id>864a4145db7d61105ca1232d13961935</id>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>ce4a4145db7d61105ca1232d13961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_864a4145db7d61105ca1232d13961935</table>
+        <value>{{step[8bbb19af-29ed-4481-be1f-b690485d2b94].langs}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>864a4145db7d61105ca1232d13961935</id>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>464a4145db7d61105ca1232d13961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_864a4145db7d61105ca1232d13961935</table>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[ffff40b6-30c2-46d9-a488-5ee0adcca85b].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>864a4145db7d61105ca1232d13961935</id>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>824a4145db7d61105ca1232d13961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_864a4145db7d61105ca1232d13961935</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=864a4145db7d61105ca1232d13961935^sys_idNOT INc24a4145db7d61105ca1232d13961939"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="List Languages">864a4145db7d61105ca1232d13961935</action>
+        <cid>8bbb19af-29ed-4481-be1f-b690485d2b94</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Prepare Firewalls</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>c24a4145db7d61105ca1232d13961939</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c24a4145db7d61105ca1232d13961939"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c24a4145db7d61105ca1232d13961939</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>824a4145db7d61105ca1232d13961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    
+    var langs = [];
+  
+        langs.push({
+            "label": "Kazakh",// "kk",
+            "name":  "kk"
+        });
+  
+   langs.push({
+            "label": "Icelandic",// "is"
+            "name": "is"
+        });
+   langs.push({
+            "label":"Marathi",//mr
+            "name": "mr"
+        });
+  langs.push({
+            "label": "Latvian",//lv
+            "name": "lv"
+        });
+  langs.push({
+            "label": "Swahili",//sw
+            "name": "sw"
+        });
+  
+    outputs.langs = {
+        data: langs
+    }
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c24a4145db7d61105ca1232d13961939</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>ce4a4145db7d61105ca1232d13961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_c24a4145db7d61105ca1232d13961939^id=c24a4145db7d61105ca1232d13961939"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=c24a4145db7d61105ca1232d13961939"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=c24a4145db7d61105ca1232d13961939"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=c24a4145db7d61105ca1232d13961939^sys_idNOT INc24a4145db7d61105ca1232d1396193d"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=a121c014-d4a2-4cf6-ad34-1aaa66553310</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>langs</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>langs</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Prepare Firewalls">c24a4145db7d61105ca1232d13961939</model>
+        <model_id>c24a4145db7d61105ca1232d13961939</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_c24a4145db7d61105ca1232d13961939</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>c24a4145db7d61105ca1232d1396193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c24a4145db7d61105ca1232d13961939"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_c24a4145db7d61105ca1232d13961939^sys_idNOT IN864a4145db7d61105ca1232d13961940"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>langs</element>
+        <help/>
+        <hint/>
+        <label>langs</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_c24a4145db7d61105ca1232d13961939</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>864a4145db7d61105ca1232d13961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=864a4145db7d61105ca1232d13961935"/>
+    <sys_hub_action_output action="delete_multiple" query="model=864a4145db7d61105ca1232d13961935^sys_idNOT IN864a4145db7d61105ca1232d1396194b,864a4145db7d61105ca1232d1396194f,ce4a4145db7d61105ca1232d13961946"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=3dc1e735-ffcf-419d-bd56-6291f0b368c6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="List Languages">864a4145db7d61105ca1232d13961935</model>
+        <model_id>864a4145db7d61105ca1232d13961935</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_864a4145db7d61105ca1232d13961935</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>864a4145db7d61105ca1232d1396194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=864a4145db7d61105ca1232d1396194b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=864a4145db7d61105ca1232d1396194b"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a95d19be-462a-4e2d-9ef6-5e1616ef45dd,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="List Languages">864a4145db7d61105ca1232d13961935</model>
+        <model_id>864a4145db7d61105ca1232d13961935</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_864a4145db7d61105ca1232d13961935</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>864a4145db7d61105ca1232d1396194f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=864a4145db7d61105ca1232d1396194f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=864a4145db7d61105ca1232d1396194f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=2b067636-e9fa-4319-a85e-d5549c6610a1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Output</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="List Languages">864a4145db7d61105ca1232d13961935</model>
+        <model_id>864a4145db7d61105ca1232d13961935</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_864a4145db7d61105ca1232d13961935</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>ce4a4145db7d61105ca1232d13961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ce4a4145db7d61105ca1232d13961946"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ce4a4145db7d61105ca1232d13961946"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=864a4145db7d61105ca1232d13961935"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=864a4145db7d61105ca1232d13961935^sys_idNOT IN0a4a4145db7d61105ca1232d13961959"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="List Languages">864a4145db7d61105ca1232d13961935</action_type_id>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>0a4a4145db7d61105ca1232d13961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=0a4a4145db7d61105ca1232d13961959"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_864a4145db7d61105ca1232d13961935"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_864a4145db7d61105ca1232d13961935"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_864a4145db7d61105ca1232d13961935^sys_idNOT IN824a4145db7d61105ca1232d13961954,c64a4145db7d61105ca1232d1396194a,c64a4145db7d61105ca1232d1396194e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_864a4145db7d61105ca1232d13961935</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>824a4145db7d61105ca1232d13961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_864a4145db7d61105ca1232d13961935</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>c64a4145db7d61105ca1232d1396194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_864a4145db7d61105ca1232d13961935</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>swati.agarwal@snc</sys_created_by>
+        <sys_created_on>2023-03-23 19:53:43</sys_created_on>
+        <sys_id>c64a4145db7d61105ca1232d1396194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>swati.agarwal@snc</sys_updated_by>
+        <sys_updated_on>2023-03-23 19:53:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_864a4145db7d61105ca1232d13961935"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>9ee701c1db7d61105ca1232d139619df</sys_id>
+        <latest_snapshot>864a4145db7d61105ca1232d13961935</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch7-02-16-2023_02-28-2023_1844.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>
