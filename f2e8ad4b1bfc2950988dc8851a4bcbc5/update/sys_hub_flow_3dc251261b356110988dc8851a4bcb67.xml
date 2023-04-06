@@ -30,7 +30,7 @@
         <sys_created_on>2023-03-28 12:21:44</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>3dc251261b356110988dc8851a4bcb67</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Create Issue</sys_name>
         <sys_overrides/>
         <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
         <sys_update_name>sys_hub_flow_3dc251261b356110988dc8851a4bcb67</sys_update_name>
         <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 12:51:51</sys_updated_on>
+        <sys_updated_on>2023-04-04 17:23:55</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=3dc251261b356110988dc8851a4bcb67"/>
@@ -54,14 +54,14 @@
         <sys_created_by>vivek.mehta@snc</sys_created_by>
         <sys_created_on>2023-03-28 12:22:09</sys_created_on>
         <sys_id>48e2d1261b356110988dc8851a4bcb53</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 12:51:51</sys_updated_on>
+        <sys_updated_on>2023-04-04 17:23:54</sys_updated_on>
         <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -105,7 +105,7 @@
     <sys_hub_flow_input action="delete_multiple" query="model=3dc251261b356110988dc8851a4bcb67"/>
     <sys_hub_flow_output action="delete_multiple" query="model=3dc251261b356110988dc8851a4bcb67"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=3dc251261b356110988dc8851a4bcb67"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=3dc251261b356110988dc8851a4bcb67^sys_idNOT IN4653d9261b356110988dc8851a4bcb7f"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=3dc251261b356110988dc8851a4bcb67^sys_idNOT IN4653d9261b356110988dc8851a4bcb7f,601b5a301b0e2910988dc8851a4bcb0a"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_type display_value="Create Issue">9419d17a87731010149c819b88cb0b50</action_type>
@@ -120,14 +120,14 @@
         <sys_created_by>vivek.mehta@snc</sys_created_by>
         <sys_created_on>2023-03-28 12:24:12</sys_created_on>
         <sys_id>4653d9261b356110988dc8851a4bcb7f</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 12:51:51</sys_updated_on>
+        <sys_updated_on>2023-04-04 17:23:55</sys_updated_on>
         <ui_id>c25b6544-3bd7-4f9c-9522-46f6aa3f26d2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4653d9261b356110988dc8851a4bcb7f"/>
@@ -176,6 +176,48 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_9419d17a87731010149c819b88cb0b50^id=4653d9261b356110988dc8851a4bcb7f"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=4653d9261b356110988dc8851a4bcb7f"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=4653d9261b356110988dc8851a4bcb7f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="RoboSettings">f812c14ddb3d61105ca1232d13961934</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create Issue">3dc251261b356110988dc8851a4bcb67</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-04 17:23:55</sys_created_on>
+        <sys_id>601b5a301b0e2910988dc8851a4bcb0a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-04 17:23:55</sys_updated_on>
+        <ui_id>ecea0e89-3901-47ab-b6d8-3392d862397d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=601b5a301b0e2910988dc8851a4bcb0a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>601b5a301b0e2910988dc8851a4bcb0a</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-04 17:23:55</sys_created_on>
+        <sys_id>241b5a301b0e2910988dc8851a4bcb0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-04 17:23:55</sys_updated_on>
+        <value>Create Issue</value>
+        <variable display_value="Flow Name">c3d21e381bca2910988dc8851a4bcb54</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_f812c14ddb3d61105ca1232d13961934^id=601b5a301b0e2910988dc8851a4bcb0a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=601b5a301b0e2910988dc8851a4bcb0a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=601b5a301b0e2910988dc8851a4bcb0a"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=3dc251261b356110988dc8851a4bcb67"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=3dc251261b356110988dc8851a4bcb67"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=3dc251261b356110988dc8851a4bcb67"/>

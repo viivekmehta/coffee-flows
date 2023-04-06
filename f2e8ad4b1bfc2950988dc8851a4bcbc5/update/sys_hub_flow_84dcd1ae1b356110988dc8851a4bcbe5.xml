@@ -11,10 +11,10 @@
         <copied_from_name>Create Survey</copied_from_name>
         <description/>
         <internal_name>create_survey</internal_name>
-        <label_cache>[{"name":"273896d1-9a5c-45ca-859b-3548dfdd1c7c.survey_id","label":"1 - Create Survey➛Survey ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"75f89df9-d441-48d1-a3cd-cdebfb606280"}}]</label_cache>
+        <label_cache>[{"name":"273896d1-9a5c-45ca-859b-3548dfdd1c7c.survey_id","label":"2 - Create Survey➛Survey ID","reference_display":"Survey ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"75f89df9-d441-48d1-a3cd-cdebfb606280"}}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
-        <name>Create Survey</name>
+        <name>Get Survey Details</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -30,15 +30,15 @@
         <sys_created_on>2023-03-28 13:05:35</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>84dcd1ae1b356110988dc8851a4bcbe5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Create Survey</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Get Survey Details</sys_name>
         <sys_overrides/>
         <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
         <sys_update_name>sys_hub_flow_84dcd1ae1b356110988dc8851a4bcbe5</sys_update_name>
         <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 13:05:36</sys_updated_on>
+        <sys_updated_on>2023-04-04 17:20:36</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=84dcd1ae1b356110988dc8851a4bcbe5"/>
@@ -47,21 +47,21 @@
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create Survey">84dcd1ae1b356110988dc8851a4bcbe5</flow>
+        <flow display_value="Get Survey Details">84dcd1ae1b356110988dc8851a4bcbe5</flow>
         <name>Run Once</name>
         <remote_sys_id/>
         <sys_class_name>sys_hub_trigger_instance</sys_class_name>
         <sys_created_by>vivek.mehta@snc</sys_created_by>
         <sys_created_on>2023-03-28 13:05:36</sys_created_on>
         <sys_id>64dc15ae1b356110988dc8851a4bcb29</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 13:05:36</sys_updated_on>
+        <sys_updated_on>2023-04-04 17:20:35</sys_updated_on>
         <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -105,78 +105,21 @@
     <sys_hub_flow_input action="delete_multiple" query="model=84dcd1ae1b356110988dc8851a4bcbe5"/>
     <sys_hub_flow_output action="delete_multiple" query="model=84dcd1ae1b356110988dc8851a4bcbe5"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=84dcd1ae1b356110988dc8851a4bcbe5"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=84dcd1ae1b356110988dc8851a4bcbe5^sys_idNOT IN54dc15ae1b356110988dc8851a4bcb05,60dc15ae1b356110988dc8851a4bcb27"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=84dcd1ae1b356110988dc8851a4bcbe5^sys_idNOT IN445adafc1bca2910988dc8851a4bcbb2,6e5516f81bca2910988dc8851a4bcbe0"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Create Survey">f346efae1bdf505038f0db16cc4bcb40</action_type>
-        <action_type_parent display_value="Create Survey">48f0afea1bdf505038f0db16cc4bcb5f</action_type_parent>
+        <action_type display_value="RoboSettings">f812c14ddb3d61105ca1232d13961934</action_type>
+        <action_type_parent/>
         <comment/>
-        <compiled_snapshot>f346efae1bdf505038f0db16cc4bcb40</compiled_snapshot>
+        <compiled_snapshot/>
         <display_text/>
-        <flow display_value="Create Survey">84dcd1ae1b356110988dc8851a4bcbe5</flow>
-        <order>1</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>vivek.mehta@snc</sys_created_by>
-        <sys_created_on>2023-03-28 13:05:36</sys_created_on>
-        <sys_id>54dc15ae1b356110988dc8851a4bcb05</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 13:05:36</sys_updated_on>
-        <ui_id>273896d1-9a5c-45ca-859b-3548dfdd1c7c</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=54dc15ae1b356110988dc8851a4bcb05"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>54dc15ae1b356110988dc8851a4bcb05</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>vivek.mehta@snc</sys_created_by>
-        <sys_created_on>2023-03-28 13:05:36</sys_created_on>
-        <sys_id>14dc15ae1b356110988dc8851a4bcb07</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 13:05:36</sys_updated_on>
-        <value>Rate our Coffee Flow Game</value>
-        <variable display_value="Survey Title">cc56efae1bdf505038f0db16cc4bcb67</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>54dc15ae1b356110988dc8851a4bcb05</document_key>
-        <order>5</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>vivek.mehta@snc</sys_created_by>
-        <sys_created_on>2023-03-28 13:05:36</sys_created_on>
-        <sys_id>50dc15ae1b356110988dc8851a4bcb07</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 13:05:36</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"exit_button":{"$cv":{"$c":"java.lang.String","$v":""}},"done_button":{"$cv":{"$c":"java.lang.String","$v":""}},"prev_button":{"$cv":{"$c":"java.lang.String","$v":""}},"next_button":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD3e3e7067982b141052123ab60d9bd150":{"exit_button":"String","exit_button.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Exit Button\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"done_button":"String","done_button.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Done Button\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"prev_button":"String","prev_button.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Button\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"next_button":"String","next_button.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Next Button\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FD3e3e7067982b141052123ab60d9bd150.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD3e3e7067982b141052123ab60d9bd150\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Button Text\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"65000\",\"uiUniqueId\":\"65eccc5e-4247-4101-9160-12a8ade2fd0d\"}"}}}</value>
-        <variable display_value="Button Text">0056efae1bdf505038f0db16cc4bcb5c</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_f346efae1bdf505038f0db16cc4bcb40^id=54dc15ae1b356110988dc8851a4bcb05"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=54dc15ae1b356110988dc8851a4bcb05"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=54dc15ae1b356110988dc8851a4bcb05"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Create Question">265378e6db61541088b1f5861d9619a8</action_type>
-        <action_type_parent display_value="Create Question">5a5e80e2db21541088b1f5861d96196c</action_type_parent>
-        <comment/>
-        <compiled_snapshot>265378e6db61541088b1f5861d9619a8</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Create Survey">84dcd1ae1b356110988dc8851a4bcbe5</flow>
+        <flow display_value="Get Survey Details">84dcd1ae1b356110988dc8851a4bcbe5</flow>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>vivek.mehta@snc</sys_created_by>
-        <sys_created_on>2023-03-28 13:05:36</sys_created_on>
-        <sys_id>60dc15ae1b356110988dc8851a4bcb27</sys_id>
+        <sys_created_on>2023-04-04 17:20:36</sys_created_on>
+        <sys_id>445adafc1bca2910988dc8851a4bcbb2</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -184,77 +127,55 @@
         <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 13:05:36</sys_updated_on>
-        <ui_id>eaec4360-3d5c-40c3-a9b7-6e7fcc990860</ui_id>
+        <sys_updated_on>2023-04-04 17:20:36</sys_updated_on>
+        <ui_id>0bcd890b-e2eb-4a8c-94fe-39a5c123931a</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=60dc15ae1b356110988dc8851a4bcb27"/>
+    <sys_variable_value action="delete_multiple" query="document_key=445adafc1bca2910988dc8851a4bcbb2"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>60dc15ae1b356110988dc8851a4bcb27</document_key>
-        <order>4</order>
+        <document_key>445adafc1bca2910988dc8851a4bcbb2</document_key>
+        <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>vivek.mehta@snc</sys_created_by>
-        <sys_created_on>2023-03-28 13:05:36</sys_created_on>
-        <sys_id>60dc15ae1b356110988dc8851a4bcb29</sys_id>
+        <sys_created_on>2023-04-04 17:20:36</sys_created_on>
+        <sys_id>085adafc1bca2910988dc8851a4bcbb3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 13:05:36</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"name$":"FD688354af59a71410452f7fe7aaffb762","$COCollectionField":["1. Okayish","2. Good","3. Woah, that was amazing!"]},"complexObjectSchema":{"FlowDesigner:FD688354af59a71410452f7fe7aaffb762":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD688354af59a71410452f7fe7aaffb762.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Add Choices\",\"mandatory\":\"true\",\"child_name\":\"choice\",\"uiUniqueId\":\"967f6d3c-55d7-4e08-b5cb-308239ed8d19\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD688354af59a71410452f7fe7aaffb762\",\"child_label\":\"Choice\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"mapped\":\"{}\",\"child_type\":\"string\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"930f6458-a726-489a-8378-c56cfe5f8178\"}"}}}</value>
-        <variable display_value="Add Choices">ae5378e6db61541088b1f5861d9619bb</variable>
+        <sys_updated_on>2023-04-04 17:20:36</sys_updated_on>
+        <value>Get Survey Details</value>
+        <variable display_value="Flow Name">c3d21e381bca2910988dc8851a4bcb54</variable>
     </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>60dc15ae1b356110988dc8851a4bcb27</document_key>
-        <order>3</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_f812c14ddb3d61105ca1232d13961934^id=445adafc1bca2910988dc8851a4bcbb2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=445adafc1bca2910988dc8851a4bcbb2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=445adafc1bca2910988dc8851a4bcbb2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Get Survey Details">768270a6db61541088b1f5861d961982</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Get Survey Details">84dcd1ae1b356110988dc8851a4bcbe5</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>vivek.mehta@snc</sys_created_by>
-        <sys_created_on>2023-03-28 13:05:36</sys_created_on>
-        <sys_id>acdc15ae1b356110988dc8851a4bcb28</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2023-04-04 16:58:55</sys_created_on>
+        <sys_id>6e5516f81bca2910988dc8851a4bcbe0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
         <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 13:05:36</sys_updated_on>
-        <value>How much fun was the game</value>
-        <variable display_value="Question">e65378e6db61541088b1f5861d9619b6</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=60dc15ae1b356110988dc8851a4bcb27"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>choices</field>
-        <id>60dc15ae1b356110988dc8851a4bcb27</id>
-        <sys_created_by>vivek.mehta@snc</sys_created_by>
-        <sys_created_on>2023-03-28 13:05:36</sys_created_on>
-        <sys_id>2cdc15ae1b356110988dc8851a4bcb28</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 13:05:36</sys_updated_on>
-        <table>var__m_sys_hub_action_input_265378e6db61541088b1f5861d9619a8</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>question</field>
-        <id>60dc15ae1b356110988dc8851a4bcb27</id>
-        <sys_created_by>vivek.mehta@snc</sys_created_by>
-        <sys_created_on>2023-03-28 13:05:36</sys_created_on>
-        <sys_id>68dc15ae1b356110988dc8851a4bcb28</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 13:05:36</sys_updated_on>
-        <table>var__m_sys_hub_action_input_265378e6db61541088b1f5861d9619a8</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>survey_id</field>
-        <id>60dc15ae1b356110988dc8851a4bcb27</id>
-        <sys_created_by>vivek.mehta@snc</sys_created_by>
-        <sys_created_on>2023-03-28 13:05:36</sys_created_on>
-        <sys_id>a4dc15ae1b356110988dc8851a4bcb28</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-03-28 13:05:36</sys_updated_on>
-        <table>var__m_sys_hub_action_input_265378e6db61541088b1f5861d9619a8</table>
-        <value>{{273896d1-9a5c-45ca-859b-3548dfdd1c7c.survey_id}}</value>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=60dc15ae1b356110988dc8851a4bcb27"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=60dc15ae1b356110988dc8851a4bcb27"/>
+        <sys_updated_on>2023-04-04 17:20:35</sys_updated_on>
+        <ui_id>b00cc92b-6423-4c85-ac5a-64b61fb4acec</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6e5516f81bca2910988dc8851a4bcbe0"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_768270a6db61541088b1f5861d961982^id=6e5516f81bca2910988dc8851a4bcbe0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6e5516f81bca2910988dc8851a4bcbe0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6e5516f81bca2910988dc8851a4bcbe0"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=84dcd1ae1b356110988dc8851a4bcbe5"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=84dcd1ae1b356110988dc8851a4bcbe5"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=84dcd1ae1b356110988dc8851a4bcbe5"/>
