@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>get_otp_from_andys</internal_name>
+        <label_cache>[{"name":"9d2e34d5-a517-4f48-939b-1834bf4af6c2.otp","label":"1 - GetOTPFromSource➛otp","reference_display":"otp","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"39754ceb-6fce-4a39-b4e9-d61984342b90"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Get OTP from Andy's</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-06 15:31:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5194d0eddb8e69105ca1232d13961958</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Get OTP from Andy's</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name>sys_hub_flow_5194d0eddb8e69105ca1232d13961958</sys_update_name>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-11 04:05:27</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=5194d0eddb8e69105ca1232d13961958"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5194d0eddb8e69105ca1232d13961958"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=5194d0eddb8e69105ca1232d13961958^sys_idNOT IN47055021dbce69105ca1232d139619b2"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Get OTP from Andy's">5194d0eddb8e69105ca1232d13961958</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-06 15:33:48</sys_created_on>
+        <sys_id>47055021dbce69105ca1232d139619b2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-11 04:05:26</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=47055021dbce69105ca1232d139619b2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>47055021dbce69105ca1232d139619b2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-06 15:33:48</sys_created_on>
+        <sys_id>5b055021dbce69105ca1232d139619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-06 15:33:48</sys_updated_on>
+        <value>1970-01-01 22:00:00</value>
+        <variable display_value="Time">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_89142dc0c32222002841b63b12d3ae8a^id=47055021dbce69105ca1232d139619b2"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=5194d0eddb8e69105ca1232d13961958"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=5194d0eddb8e69105ca1232d13961958^sys_idNOT IN9994d0eddb8e69105ca1232d13961959"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>5194d0eddb8e69105ca1232d13961958</id>
+        <name>Get OTP from Andy's</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-06 15:31:46</sys_created_on>
+        <sys_id>9994d0eddb8e69105ca1232d13961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-06 15:31:46</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9994d0eddb8e69105ca1232d13961959"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=5194d0eddb8e69105ca1232d13961958"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=5194d0eddb8e69105ca1232d13961958"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5194d0eddb8e69105ca1232d13961958"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=5194d0eddb8e69105ca1232d13961958^sys_idNOT IN1b055021dbce69105ca1232d139619c1,5b055021dbce69105ca1232d139619d6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="GetOTPFromSource">efa358addb8e69105ca1232d139619c4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Get OTP from Andy's">5194d0eddb8e69105ca1232d13961958</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-06 15:33:49</sys_created_on>
+        <sys_id>1b055021dbce69105ca1232d139619c1</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-11 04:05:26</sys_updated_on>
+        <ui_id>9d2e34d5-a517-4f48-939b-1834bf4af6c2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1b055021dbce69105ca1232d139619c1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1b055021dbce69105ca1232d139619c1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1b055021dbce69105ca1232d139619c1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send SMS">6d67c7c0736633004b134a2214f6a76d</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Get OTP from Andy's">5194d0eddb8e69105ca1232d13961958</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-06 15:33:49</sys_created_on>
+        <sys_id>5b055021dbce69105ca1232d139619d6</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-11 04:05:26</sys_updated_on>
+        <ui_id>ed2ce046-83bd-4bcf-b58f-3ab3435b8627</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5b055021dbce69105ca1232d139619d6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5b055021dbce69105ca1232d139619d6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-06 15:33:49</sys_created_on>
+        <sys_id>9b055021dbce69105ca1232d139619d8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-06 18:07:38</sys_updated_on>
+        <value>+14754053369</value>
+        <variable display_value="From">ed67c7c0736633004b134a2214f6a76e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5b055021dbce69105ca1232d139619d6</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-06 18:07:38</sys_created_on>
+        <sys_id>a048342d1bcea910988dc8851a4bcb5a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-07 01:44:11</sys_updated_on>
+        <value/>
+        <variable display_value="To">e167c7c0736633004b134a2214f6a774</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5b055021dbce69105ca1232d139619d6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>from</field>
+        <id>5b055021dbce69105ca1232d139619d6</id>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-06 15:33:49</sys_created_on>
+        <sys_id>1b055021dbce69105ca1232d139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-06 15:33:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d67c7c0736633004b134a2214f6a76d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>text_message</field>
+        <id>5b055021dbce69105ca1232d139619d6</id>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-06 15:33:49</sys_created_on>
+        <sys_id>57055021dbce69105ca1232d139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-06 15:33:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d67c7c0736633004b134a2214f6a76d</table>
+        <value>{{9d2e34d5-a517-4f48-939b-1834bf4af6c2.otp}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>to</field>
+        <id>5b055021dbce69105ca1232d139619d6</id>
+        <sys_created_by>vivek.mehta@snc</sys_created_by>
+        <sys_created_on>2023-04-06 18:07:38</sys_created_on>
+        <sys_id>e448342d1bcea910988dc8851a4bcb59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
+        <sys_updated_on>2023-04-06 18:07:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d67c7c0736633004b134a2214f6a76d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5b055021dbce69105ca1232d139619d6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5b055021dbce69105ca1232d139619d6"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=5194d0eddb8e69105ca1232d13961958"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=5194d0eddb8e69105ca1232d13961958"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=5194d0eddb8e69105ca1232d13961958"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=5194d0eddb8e69105ca1232d13961958"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_5194d0eddb8e69105ca1232d13961958"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5194d0eddb8e69105ca1232d13961958"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_5194d0eddb8e69105ca1232d13961958"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5194d0eddb8e69105ca1232d13961958"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=5194d0eddb8e69105ca1232d13961958"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=5194d0eddb8e69105ca1232d13961958"/>
+</record_update>

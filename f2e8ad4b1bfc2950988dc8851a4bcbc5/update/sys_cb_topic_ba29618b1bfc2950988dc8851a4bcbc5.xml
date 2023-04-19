@@ -898,6 +898,7 @@
         <sys_created_by>manish.kothari@snc</sys_created_by>
         <sys_created_on>2023-02-08 10:13:43</sys_created_on>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>ba29618b1bfc2950988dc8851a4bcbc5</sys_id>
         <sys_mod_count>18</sys_mod_count>
         <sys_name>Cofama</sys_name>

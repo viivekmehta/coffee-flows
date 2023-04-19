@@ -26,6 +26,7 @@
         <sys_created_by>swati.agarwal@snc</sys_created_by>
         <sys_created_on>2023-03-23 19:59:24</sys_created_on>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>199bc585db7d61105ca1232d139619e0</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>InputsRoboSettings</sys_name>

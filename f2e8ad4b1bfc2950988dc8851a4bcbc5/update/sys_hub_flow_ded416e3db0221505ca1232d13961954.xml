@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>take_average</internal_name>
+        <label_cache>[{"name":"d3e89bd9-7b7d-428d-981a-1c8c7bcfc1ad.item.answers","label":"2 - For Each➛question_child0➛answers","reference":"","reference_display":"","type":"object","base_type":"object","column_name":"","attributes":{"uiUniqueId":"96e8bb1e-ff39-4ebd-b44a-8edb440f360a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"83cac23c-9ee0-4454-97cd-f76dea9f45fb.item.question","label":"1 - For Each➛P_child0➛questions","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{"uiUniqueId":"1e50b449-5699-483a-9a16-043a15a835e4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"83cac23c-9ee0-4454-97cd-f76dea9f45fb.item","label":"1 - For Each➛P_child0","reference_display":"P_child0","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.pages","label":"Input➛Pages","type":"object","base_type":"object","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2abbf82e-b493-4f6f-bb22-7e4f2581aa5e"}},{"name":"d3e89bd9-7b7d-428d-981a-1c8c7bcfc1ad.item","label":"2 - For Each➛question_child0","reference_display":"question_child0","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master_snapshot>0ff862a3db4221505ca1232d1396190f</master_snapshot>
+        <name>take average</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 06:00:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ded416e3db0221505ca1232d13961954</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>take average</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name>sys_hub_flow_ded416e3db0221505ca1232d13961954</sys_update_name>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:30</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=ded416e3db0221505ca1232d13961954"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ded416e3db0221505ca1232d13961954"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=ded416e3db0221505ca1232d13961954"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ded416e3db0221505ca1232d13961954"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ded416e3db0221505ca1232d13961954^sys_idNOT INdad416e3db0221505ca1232d13961957"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ded416e3db0221505ca1232d13961954</id>
+        <name>take average</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 06:00:01</sys_created_on>
+        <sys_id>dad416e3db0221505ca1232d13961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 06:00:01</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=dad416e3db0221505ca1232d13961957"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ded416e3db0221505ca1232d13961954^sys_idNOT IN96d8ee63db4221505ca1232d1396196c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=P_child0,child_name=p_child0,child_type=object,child_type_label=Object,child_uiUniqueId=15772d81-18bc-489a-92db-429d1aaaac4e,co_type_name=FD92d8ee638b42215048702ad5f483ee67,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=2abbf82e-b493-4f6f-bb22-7e4f2581aa5e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>pages</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Pages</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="take average">ded416e3db0221505ca1232d13961954</model>
+        <model_id>ded416e3db0221505ca1232d13961954</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ded416e3db0221505ca1232d13961954</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 07:27:24</sys_created_on>
+        <sys_id>96d8ee63db4221505ca1232d1396196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 07:27:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=ded416e3db0221505ca1232d13961954"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ded416e3db0221505ca1232d13961954"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=ded416e3db0221505ca1232d13961954^sys_idNOT IN1830076bdb8221505ca1232d139619dc,c910836bdb8221505ca1232d13961969"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="take average">ded416e3db0221505ca1232d13961954</flow>
+        <order>4</order>
+        <parent_ui_id>ca67c7c0-d4e6-40cb-b4f6-6747e9ce839f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 09:09:23</sys_created_on>
+        <sys_id>1830076bdb8221505ca1232d139619dc</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:10:02</sys_updated_on>
+        <ui_id>fb3b8fbd-8297-4838-95a4-72107ada0652</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1830076bdb8221505ca1232d139619dc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1830076bdb8221505ca1232d139619dc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 09:09:23</sys_created_on>
+        <sys_id>5830076bdb8221505ca1232d139619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:23</sys_updated_on>
+        <value>csdcsdc</value>
+        <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=1830076bdb8221505ca1232d139619dc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1830076bdb8221505ca1232d139619dc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1830076bdb8221505ca1232d139619dc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="take average">ded416e3db0221505ca1232d13961954</flow>
+        <order>2</order>
+        <parent_ui_id>83cac23c-9ee0-4454-97cd-f76dea9f45fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 09:08:54</sys_created_on>
+        <sys_id>c910836bdb8221505ca1232d13961969</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:10:02</sys_updated_on>
+        <ui_id>4e204df6-ca63-4df4-91a3-2a4af21d754d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c910836bdb8221505ca1232d13961969"/>
+    <sys_element_mapping action="delete_multiple" query="id=c910836bdb8221505ca1232d13961969"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>c910836bdb8221505ca1232d13961969</id>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 09:08:54</sys_created_on>
+        <sys_id>cd10836bdb8221505ca1232d13961977</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:08:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{83cac23c-9ee0-4454-97cd-f76dea9f45fb.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c910836bdb8221505ca1232d13961969"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c910836bdb8221505ca1232d13961969"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=ded416e3db0221505ca1232d13961954"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=ded416e3db0221505ca1232d13961954^sys_idNOT IN5030076bdb8221505ca1232d139619d6,e6d8ee63db4221505ca1232d13961977"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9830076bdb8221505ca1232d139619d5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="take average">ded416e3db0221505ca1232d13961954</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>83cac23c-9ee0-4454-97cd-f76dea9f45fb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 09:09:23</sys_created_on>
+        <sys_id>5030076bdb8221505ca1232d139619d6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:30</sys_updated_on>
+        <ui_id>ca67c7c0-d4e6-40cb-b4f6-6747e9ce839f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5030076bdb8221505ca1232d139619d6"/>
+    <sys_element_mapping action="delete_multiple" query="id=5030076bdb8221505ca1232d139619d6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>5030076bdb8221505ca1232d139619d6</id>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 09:09:23</sys_created_on>
+        <sys_id>d830076bdb8221505ca1232d139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:23</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{83cac23c-9ee0-4454-97cd-f76dea9f45fb.item.question}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5030076bdb8221505ca1232d139619d6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5030076bdb8221505ca1232d139619d6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2ed8ee63db4221505ca1232d13961976</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="take average">ded416e3db0221505ca1232d13961954</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 07:27:25</sys_created_on>
+        <sys_id>e6d8ee63db4221505ca1232d13961977</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:30</sys_updated_on>
+        <ui_id>83cac23c-9ee0-4454-97cd-f76dea9f45fb</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e6d8ee63db4221505ca1232d13961977"/>
+    <sys_element_mapping action="delete_multiple" query="id=e6d8ee63db4221505ca1232d13961977"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>e6d8ee63db4221505ca1232d13961977</id>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 07:27:25</sys_created_on>
+        <sys_id>e2d8ee63db4221505ca1232d1396197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 07:27:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{subflow.pages}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e6d8ee63db4221505ca1232d13961977"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e6d8ee63db4221505ca1232d13961977"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ded416e3db0221505ca1232d13961954"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ded416e3db0221505ca1232d13961954"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_ded416e3db0221505ca1232d13961954^sys_idNOT IN26d8ee63db4221505ca1232d13961972"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>pages</element>
+        <help/>
+        <hint/>
+        <label>Pages</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ded416e3db0221505ca1232d13961954</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 07:27:25</sys_created_on>
+        <sys_id>26d8ee63db4221505ca1232d13961972</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 07:27:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ded416e3db0221505ca1232d13961954"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ded416e3db0221505ca1232d13961954"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ded416e3db0221505ca1232d13961954"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ded416e3db0221505ca1232d13961954"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ded416e3db0221505ca1232d13961954^sys_idNOT IN57f862a3db4221505ca1232d139619a7"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"57f862a3db4221505ca1232d139619a7","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="take average">ded416e3db0221505ca1232d13961954</plan_id>
+        <snapshot>e5508b6bdb8221505ca1232d13961943</snapshot>
+        <sys_class_name>sys_flow_subflow_plan</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 07:28:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>57f862a3db4221505ca1232d139619a7</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:30</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>take_average</internal_name>
+        <label_cache>[{"name":"d3e89bd9-7b7d-428d-981a-1c8c7bcfc1ad.item.answers","label":"2 - For Each➛question_child0➛answers","reference":"","reference_display":"","type":"object","base_type":"object","column_name":"","attributes":{"uiUniqueId":"96e8bb1e-ff39-4ebd-b44a-8edb440f360a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"83cac23c-9ee0-4454-97cd-f76dea9f45fb.item.question","label":"1 - For Each➛P_child0➛questions","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{"uiUniqueId":"1e50b449-5699-483a-9a16-043a15a835e4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"83cac23c-9ee0-4454-97cd-f76dea9f45fb.item","label":"1 - For Each➛P_child0","reference_display":"P_child0","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.pages","label":"Input➛Pages","type":"object","base_type":"object","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2abbf82e-b493-4f6f-bb22-7e4f2581aa5e"}},{"name":"d3e89bd9-7b7d-428d-981a-1c8c7bcfc1ad.item","label":"2 - For Each➛question_child0","reference_display":"question_child0","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master>true</master>
+        <name>take average</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="take average">ded416e3db0221505ca1232d13961954</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 07:27:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0ff862a3db4221505ca1232d1396190f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:29</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=0ff862a3db4221505ca1232d1396190f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0ff862a3db4221505ca1232d1396190f"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=0ff862a3db4221505ca1232d1396190f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=0ff862a3db4221505ca1232d1396190f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=0ff862a3db4221505ca1232d1396190f^sys_idNOT IN4bf862a3db4221505ca1232d13961910"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>0ff862a3db4221505ca1232d1396190f</id>
+        <name>take average</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 07:27:59</sys_created_on>
+        <sys_id>4bf862a3db4221505ca1232d13961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 07:27:59</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4bf862a3db4221505ca1232d13961910"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=0ff862a3db4221505ca1232d1396190f^sys_idNOT IN4ff862a3db4221505ca1232d13961913"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=P_child0,child_name=p_child0,child_type=object,child_type_label=Object,child_uiUniqueId=15772d81-18bc-489a-92db-429d1aaaac4e,co_type_name=FD4ff862a352422150256b1f4fc203f911,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=2abbf82e-b493-4f6f-bb22-7e4f2581aa5e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>pages</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Pages</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="take average">0ff862a3db4221505ca1232d1396190f</model>
+        <model_id>0ff862a3db4221505ca1232d1396190f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_0ff862a3db4221505ca1232d1396190f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 07:27:59</sys_created_on>
+        <sys_id>4ff862a3db4221505ca1232d13961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 07:27:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=0ff862a3db4221505ca1232d1396190f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0ff862a3db4221505ca1232d1396190f"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=0ff862a3db4221505ca1232d1396190f^sys_idNOT IN2130476bdb8221505ca1232d139619b7,e930476bdb8221505ca1232d139619bb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="take average">0ff862a3db4221505ca1232d1396190f</flow>
+        <order>2</order>
+        <parent_ui_id>83cac23c-9ee0-4454-97cd-f76dea9f45fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 09:09:28</sys_created_on>
+        <sys_id>2130476bdb8221505ca1232d139619b7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:29</sys_updated_on>
+        <ui_id>4e204df6-ca63-4df4-91a3-2a4af21d754d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2130476bdb8221505ca1232d139619b7"/>
+    <sys_element_mapping action="delete_multiple" query="id=2130476bdb8221505ca1232d139619b7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>2130476bdb8221505ca1232d139619b7</id>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 09:09:28</sys_created_on>
+        <sys_id>ed30476bdb8221505ca1232d139619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{83cac23c-9ee0-4454-97cd-f76dea9f45fb.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2130476bdb8221505ca1232d139619b7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2130476bdb8221505ca1232d139619b7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="take average">0ff862a3db4221505ca1232d1396190f</flow>
+        <order>4</order>
+        <parent_ui_id>ca67c7c0-d4e6-40cb-b4f6-6747e9ce839f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 09:09:28</sys_created_on>
+        <sys_id>e930476bdb8221505ca1232d139619bb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:29</sys_updated_on>
+        <ui_id>fb3b8fbd-8297-4838-95a4-72107ada0652</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e930476bdb8221505ca1232d139619bb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e930476bdb8221505ca1232d139619bb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 09:09:28</sys_created_on>
+        <sys_id>2d30476bdb8221505ca1232d139619bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:28</sys_updated_on>
+        <value>csdcsdc</value>
+        <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=e930476bdb8221505ca1232d139619bb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e930476bdb8221505ca1232d139619bb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e930476bdb8221505ca1232d139619bb"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=0ff862a3db4221505ca1232d1396190f"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=0ff862a3db4221505ca1232d1396190f^sys_idNOT IN07f862a3db4221505ca1232d13961961,6130476bdb8221505ca1232d139619c3"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2ed8ee63db4221505ca1232d13961976</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="take average">0ff862a3db4221505ca1232d1396190f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 07:28:00</sys_created_on>
+        <sys_id>07f862a3db4221505ca1232d13961961</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:29</sys_updated_on>
+        <ui_id>83cac23c-9ee0-4454-97cd-f76dea9f45fb</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=07f862a3db4221505ca1232d13961961"/>
+    <sys_element_mapping action="delete_multiple" query="id=07f862a3db4221505ca1232d13961961"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>07f862a3db4221505ca1232d13961961</id>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 07:28:00</sys_created_on>
+        <sys_id>87f862a3db4221505ca1232d13961964</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 07:28:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{subflow.pages}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=07f862a3db4221505ca1232d13961961"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=07f862a3db4221505ca1232d13961961"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9830076bdb8221505ca1232d139619d5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="take average">0ff862a3db4221505ca1232d1396190f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>83cac23c-9ee0-4454-97cd-f76dea9f45fb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 09:09:29</sys_created_on>
+        <sys_id>6130476bdb8221505ca1232d139619c3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:29</sys_updated_on>
+        <ui_id>ca67c7c0-d4e6-40cb-b4f6-6747e9ce839f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6130476bdb8221505ca1232d139619c3"/>
+    <sys_element_mapping action="delete_multiple" query="id=6130476bdb8221505ca1232d139619c3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>6130476bdb8221505ca1232d139619c3</id>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 09:09:29</sys_created_on>
+        <sys_id>e530476bdb8221505ca1232d139619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 09:09:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{83cac23c-9ee0-4454-97cd-f76dea9f45fb.item.question}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6130476bdb8221505ca1232d139619c3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6130476bdb8221505ca1232d139619c3"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0ff862a3db4221505ca1232d1396190f"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=0ff862a3db4221505ca1232d1396190f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_0ff862a3db4221505ca1232d1396190f^sys_idNOT INcff862a3db4221505ca1232d1396195a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>pages</element>
+        <help/>
+        <hint/>
+        <label>Pages</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0ff862a3db4221505ca1232d1396190f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>masterkey</sys_created_by>
+        <sys_created_on>2023-04-13 07:28:00</sys_created_on>
+        <sys_id>cff862a3db4221505ca1232d1396195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>masterkey</sys_updated_by>
+        <sys_updated_on>2023-04-13 07:28:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0ff862a3db4221505ca1232d1396190f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_0ff862a3db4221505ca1232d1396190f"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0ff862a3db4221505ca1232d1396190f"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ded416e3db0221505ca1232d13961954</sys_id>
+        <latest_snapshot>0ff862a3db4221505ca1232d1396190f</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch7-02-16-2023_02-28-2023_1844.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

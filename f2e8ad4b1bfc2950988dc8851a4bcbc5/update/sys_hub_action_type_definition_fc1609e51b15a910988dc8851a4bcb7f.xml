@@ -24,6 +24,7 @@
         <sys_created_by>vivek.mehta@snc</sys_created_by>
         <sys_created_on>2023-02-28 12:20:54</sys_created_on>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>fc1609e51b15a910988dc8851a4bcb7f</sys_id>
         <sys_mod_count>25</sys_mod_count>
         <sys_name>Save User Details</sys_name>
@@ -2339,6 +2340,7 @@
         <sys_created_by>vivek.mehta@snc</sys_created_by>
         <sys_created_on>2023-02-28 12:24:30</sys_created_on>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>5de6c5291b15a910988dc8851a4bcb5c</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name/>
@@ -2372,6 +2374,7 @@
         <sys_created_by>vivek.mehta@snc</sys_created_by>
         <sys_created_on>2023-02-28 12:24:27</sys_created_on>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>28e685291b15a910988dc8851a4bcbb8</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name/>

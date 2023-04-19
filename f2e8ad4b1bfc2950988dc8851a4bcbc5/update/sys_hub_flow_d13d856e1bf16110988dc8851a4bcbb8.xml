@@ -29,6 +29,7 @@
         <sys_created_by>vivek.mehta@snc</sys_created_by>
         <sys_created_on>2023-03-28 11:57:23</sys_created_on>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>d13d856e1bf16110988dc8851a4bcbb8</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>Send SMS</sys_name>
@@ -180,7 +181,6 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=125055621b356110988dc8851a4bcbc0"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
         <action_type display_value="RoboSettings">f812c14ddb3d61105ca1232d13961934</action_type>
         <action_type_parent/>
         <comment/>
@@ -204,45 +204,7 @@
         <ui_id>2b6bc707-9855-4ff0-b0ca-4b4c627912ba</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a434d2b81bca2910988dc8851a4bcb11"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>a434d2b81bca2910988dc8851a4bcb11</document_key>
-        <order>2</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>vivek.mehta@snc</sys_created_by>
-        <sys_created_on>2023-04-04 16:53:53</sys_created_on>
-        <sys_id>2834d2b81bca2910988dc8851a4bcb13</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-04-04 16:53:53</sys_updated_on>
-        <value>Send SMS</value>
-        <variable display_value="Flow Name">c3d21e381bca2910988dc8851a4bcb54</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=a434d2b81bca2910988dc8851a4bcb11"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>flow_name</field>
-        <id>a434d2b81bca2910988dc8851a4bcb11</id>
-        <sys_created_by>vivek.mehta@snc</sys_created_by>
-        <sys_created_on>2023-04-04 16:53:53</sys_created_on>
-        <sys_id>ec34d2b81bca2910988dc8851a4bcb12</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-04-04 16:53:53</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f812c14ddb3d61105ca1232d13961934</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>message</field>
-        <id>a434d2b81bca2910988dc8851a4bcb11</id>
-        <sys_created_by>vivek.mehta@snc</sys_created_by>
-        <sys_created_on>2023-04-04 16:53:53</sys_created_on>
-        <sys_id>a434d2b81bca2910988dc8851a4bcb13</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>vivek.mehta@snc</sys_updated_by>
-        <sys_updated_on>2023-04-04 16:53:53</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f812c14ddb3d61105ca1232d13961934</table>
-        <value>{{d6e67e58-3e42-4a59-9f1d-9ad692a7ca33.sms.body}}</value>
-    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_f812c14ddb3d61105ca1232d13961934^id=a434d2b81bca2910988dc8851a4bcb11"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=a434d2b81bca2910988dc8851a4bcb11"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=a434d2b81bca2910988dc8851a4bcb11"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=d13d856e1bf16110988dc8851a4bcbb8"/>

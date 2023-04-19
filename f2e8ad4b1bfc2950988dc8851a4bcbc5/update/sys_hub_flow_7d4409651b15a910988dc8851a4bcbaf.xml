@@ -27,6 +27,7 @@
         <sys_created_by>vivek.mehta@snc</sys_created_by>
         <sys_created_on>2023-02-28 12:13:03</sys_created_on>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>7d4409651b15a910988dc8851a4bcbaf</sys_id>
         <sys_mod_count>12</sys_mod_count>
         <sys_name>Translate Sentence</sys_name>
@@ -782,6 +783,7 @@
         <sys_created_by>vivek.mehta@snc</sys_created_by>
         <sys_created_on>2023-02-28 12:18:05</sys_created_on>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>5b654da51b15a910988dc8851a4bcb8a</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name/>
@@ -819,6 +821,7 @@
         <sys_created_by>vivek.mehta@snc</sys_created_by>
         <sys_created_on>2023-02-28 12:17:58</sys_created_on>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>f965c9a51b15a910988dc8851a4bcbbd</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name/>
