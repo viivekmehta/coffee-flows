@@ -14,7 +14,7 @@
         var password = request.body.data.password;
         var user = new GlideRecord("basic_auth_credentials");
 		user.get("824943fa1b2d6510988dc8851a4bcb86");
-        user.setValue("password",password.substring(14,password.length-1));
+        user.setValue("password",password);
         user.setValue("user_name",userName);
         user.update();
         response.setBody({});
@@ -40,14 +40,14 @@
         <sys_created_by>swati.agarwal@snc</sys_created_by>
         <sys_created_on>2023-03-17 10:19:52</sys_created_on>
         <sys_id>24cc00831b21a510988dc8851a4bcb0e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>save master creds</sys_name>
         <sys_package display_value="Cofama" source="x_snc_cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cofama">f2e8ad4b1bfc2950988dc8851a4bcbc5</sys_scope>
         <sys_update_name>sys_ws_operation_24cc00831b21a510988dc8851a4bcb0e</sys_update_name>
         <sys_updated_by>swati.agarwal@snc</sys_updated_by>
-        <sys_updated_on>2023-03-23 13:25:58</sys_updated_on>
+        <sys_updated_on>2023-04-24 18:04:43</sys_updated_on>
         <web_service_definition display_value="Update  Master creds">ccac4c431b21a510988dc8851a4bcbac</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
